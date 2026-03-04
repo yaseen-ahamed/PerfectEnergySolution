@@ -1,0 +1,66 @@
+import { SEO } from '../../components/SEO';
+import { Link } from 'react-router-dom';
+import { CheckCircle2, PhoneCall, MessageSquare, ArrowRight, Network, Wifi, Server, Shield } from 'lucide-react';
+
+export default function NetworkingSolutions() {
+    const faqData = [
+        { q: "What types of networks do you install?", a: "We install wired (Ethernet/LAN) and wireless (Wi-Fi) networks for offices, homes, retail stores, and commercial facilities across Riyadh." },
+        { q: "How long does a network installation take?", a: "A standard office network installation takes 1–3 days depending on the size of the facility and complexity of the infrastructure required." },
+        { q: "Do you provide ongoing IT support?", a: "Yes. We offer both one-time setup services and ongoing IT support contracts to keep your network running at peak performance." },
+        { q: "Can you upgrade our existing network?", a: "Absolutely. We assess your current infrastructure and recommend cost-effective upgrades to improve speed, reliability, and security." },
+        { q: "Do you serve all areas in Riyadh?", a: "Yes, we provide networking services across all major Riyadh districts including Olaya, Al Malaz, Al Nakheel, Al Yasmin, and more." }
+    ];
+    const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqData.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) };
+
+    return (
+        <>
+            <SEO title="Network Installation & IT Solutions in Riyadh | Perfect Energy Solution" description="Expert network installation, office networking, and IT support services in Riyadh. Reliable infrastructure setup for businesses. Contact Perfect Energy Solution." canonicalUrl="/services/networking-solutions"
+                jsonLdSchema={[faqSchema, { "@context": "https://schema.org", "@type": "Service", "serviceType": "Network Installation", "provider": { "@type": "LocalBusiness", "name": "Perfect Energy Solution" }, "areaServed": { "@type": "City", "name": "Riyadh" } }, { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://perfectenergysolution.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://perfectenergysolution.com/services" }, { "@type": "ListItem", "position": 3, "name": "Networking Solutions" }] }]} />
+            <div className="flex flex-col min-h-screen bg-background">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pt-8">
+                    <nav className="flex items-center gap-2 text-sm text-gray-500 font-sans">
+                        <Link to="/" className="hover:text-accent transition-colors">Home</Link><span>/</span>
+                        <Link to="/services" className="hover:text-accent transition-colors">Services</Link><span>/</span>
+                        <span className="text-textDark font-medium">Networking & Software Solutions</span>
+                    </nav>
+                </div>
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12 lg:py-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 text-sm font-medium mb-6"><Network className="w-4 h-4" /> Professional IT Services</div>
+                            <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-textDark leading-tight mb-6">Networking & Software Solutions in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh</span></h1>
+                            <p className="text-lg text-textDark/70 font-sans leading-relaxed mb-4">Perfect Energy Solution delivers professional network installation and IT support services throughout Riyadh. We design, install, and maintain reliable network infrastructure for offices, businesses, and commercial facilities — ensuring your operations stay connected and productive.</p>
+                            <p className="text-base text-gray-500 font-sans leading-relaxed mb-8">From router and switch configuration to complete office networking setups and software troubleshooting, our team provides end-to-end IT support tailored to your specific requirements.</p>
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <a href="tel:+966566149219" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg transform hover:-translate-y-1"><PhoneCall className="w-5 h-5" /> Get a Consultation</a>
+                                <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border border-borderGrey px-8 py-4 rounded-xl font-semibold transition-all transform hover:-translate-y-1"><MessageSquare className="w-5 h-5 text-green-500" /> WhatsApp Us</a>
+                            </div>
+                        </div>
+                        <div className="bg-primary rounded-3xl p-10 text-white relative overflow-hidden">
+                            <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+                            <h3 className="text-xl font-heading font-bold text-white mb-6">Quick Service Overview</h3>
+                            <ul className="space-y-3">{["LAN & WAN setup", "Wi-Fi network design", "Router & switch configuration", "Server setup & management", "Software troubleshooting", "Ongoing IT support contracts"].map((item, i) => (<li key={i} className="flex items-center gap-3 text-gray-200"><CheckCircle2 className="w-5 h-5 text-accent shrink-0" /> {item}</li>))}</ul>
+                        </div>
+                    </div>
+                </section>
+                <section className="bg-white py-20">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                        <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Our Networking Services</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {[{ icon: Wifi, title: "Network Design & Installation", items: ["Office LAN/WAN infrastructure", "Structured cabling systems", "Wi-Fi access point deployment", "Network topology planning"] }, { icon: Server, title: "Server & Infrastructure Setup", items: ["File server configuration", "Cloud integration services", "Data backup solutions", "Network-attached storage (NAS)"] }, { icon: Shield, title: "Network Security", items: ["Firewall configuration", "Intrusion detection systems", "VPN setup for remote access", "Network access control"] }, { icon: Network, title: "Software & IT Support", items: ["Operating system installation", "Software deployment & licensing", "Remote desktop support", "IT troubleshooting & diagnostics"] }].map((s, idx) => (
+                                <div key={idx} className="bg-background rounded-3xl p-8 border border-borderGrey">
+                                    <div className="flex items-center gap-4 mb-6"><div className="w-12 h-12 rounded-2xl bg-indigo-400/10 flex items-center justify-center text-indigo-400"><s.icon className="w-6 h-6" /></div><h3 className="text-xl font-heading font-bold text-textDark">{s.title}</h3></div>
+                                    <ul className="space-y-2">{s.items.map((item, i) => (<li key={i} className="flex items-center gap-3 text-gray-600 font-sans"><CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" /> {item}</li>))}</ul>
+                                </div>))}
+                        </div>
+                    </div>
+                </section>
+                <section className="py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Our Installation Process</h2><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">{[{ num: "01", title: "Assessment", desc: "Evaluate your current IT needs and infrastructure." }, { num: "02", title: "Design", desc: "Create a network topology tailored to your business." }, { num: "03", title: "Installation", desc: "Professional cabling, hardware setup, and configuration." }, { num: "04", title: "Testing", desc: "End-to-end connectivity and performance testing." }, { num: "05", title: "Support", desc: "Ongoing maintenance and IT helpdesk services." }].map((step, idx) => (<div key={idx} className="bg-white rounded-3xl p-6 border border-borderGrey text-center group hover:shadow-md transition-all"><div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mx-auto mb-4 font-heading font-bold text-lg group-hover:scale-110 transition-transform">{step.num}</div><h3 className="text-lg font-heading font-bold text-textDark mb-2">{step.title}</h3><p className="text-gray-600 font-sans text-sm leading-relaxed">{step.desc}</p></div>))}</div></div></section>
+                <section className="bg-white py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6">Networking Services Across Riyadh</h2><p className="text-lg text-gray-600 font-sans max-w-3xl mx-auto mb-10">We serve offices and commercial facilities in all major Riyadh areas:</p><div className="flex flex-wrap justify-center gap-3">{["Olaya", "Al Malaz", "Al Nakheel", "Al Yasmin", "Al Murabba", "King Fahd District", "Al Worood", "Al Rawdah"].map((a, i) => (<span key={i} className="px-4 py-2 bg-accent/10 text-accent rounded-full font-semibold text-sm border border-accent/20">{a}</span>))}</div></div></section>
+                <section className="py-16"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{[{ title: "CCTV & Security Systems", slug: "cctv-installation", desc: "Surveillance and security solutions." }, { title: "Electronics Repair", slug: "electronics-repair", desc: "Device repair and maintenance." }, { title: "Technical Support", slug: "technical-support", desc: "General IT troubleshooting." }].map((link, idx) => (<Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group"><div><h3 className="font-heading font-bold text-textDark mb-1">{link.title}</h3><p className="text-sm text-gray-500">{link.desc}</p></div><ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" /></Link>))}</div></div></section>
+                <section className="bg-white py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Frequently Asked Questions</h2><div className="space-y-4">{faqData.map((faq, idx) => (<details key={idx} className="bg-background rounded-2xl border border-borderGrey p-6 group"><summary className="font-heading font-bold text-textDark cursor-pointer list-none flex items-center justify-between">{faq.q}<span className="text-accent text-xl group-open:rotate-45 transition-transform">+</span></summary><p className="text-gray-600 font-sans mt-4 leading-relaxed">{faq.a}</p></details>))}</div></div></section>
+                <section className="pb-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"><div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div><div className="relative z-10 max-w-2xl mx-auto"><h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Need Office Network Setup in Riyadh?</h2><p className="text-gray-300 font-sans text-lg mb-8">Our IT experts are ready to design and install your ideal network.</p><div className="flex flex-col sm:flex-row gap-4 justify-center"><a href="tel:+966566149219" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1"><PhoneCall className="w-5 h-5" /> Call Now</a><a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1"><MessageSquare className="w-5 h-5" /> WhatsApp Us</a></div></div></div></div></section>
+            </div>
+        </>
+    );
+}

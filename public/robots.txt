@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /admin/
+
+Sitemap: https://perfectenergysolution.com/sitemap.xml
