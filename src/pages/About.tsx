@@ -1,4 +1,5 @@
-import { Target, Eye, ShieldCheck, Users, Award, Wrench, Cpu, Network, Camera, Zap, PhoneCall, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
+import { Target, Eye, ShieldCheck, Users, Award, Wrench, Cpu, Network, Camera, Zap, PhoneCall, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 
 export default function About() {
@@ -191,7 +192,7 @@ export default function About() {
                                     rel="noreferrer"
                                     className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1"
                                 >
-                                    <MessageSquare className="w-5 h-5" />
+                                    <WhatsAppIcon className="w-5 h-5" />
                                     WhatsApp Us
                                 </a>
                             </div>

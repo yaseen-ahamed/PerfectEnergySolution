@@ -1,4 +1,5 @@
-import { Cpu, Network, Camera, Zap, Wrench, CheckCircle2, PhoneCall, MessageSquare, Sun, ArrowRight } from 'lucide-react';
+import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
+import { Cpu, Network, Camera, Zap, Wrench, CheckCircle2, PhoneCall, Sun, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 
@@ -242,7 +243,7 @@ export default function Services() {
                                 Call Now
                             </a>
                             <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
-                                <MessageSquare className="w-5 h-5" />
+                                <WhatsAppIcon className="w-5 h-5" />
                                 Contact Us
                             </Link>
                         </div>

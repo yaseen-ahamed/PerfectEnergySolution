@@ -1,5 +1,6 @@
+import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
 import { useState } from 'react';
-import { PhoneCall, MessageSquare, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { PhoneCall, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 
 export default function Contact() {
@@ -30,7 +31,7 @@ export default function Contact() {
             color: "bg-blue-500/10 text-blue-500"
         },
         {
-            icon: MessageSquare,
+            icon: WhatsAppIcon,
             label: "WhatsApp",
             value: "+966 56 614 9219",
             href: "https://wa.me/966566149219",
@@ -238,7 +239,7 @@ export default function Contact() {
                                 rel="noreferrer"
                                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1"
                             >
-                                <MessageSquare className="w-5 h-5" />
+                                <WhatsAppIcon className="w-5 h-5" />
                                 WhatsApp Us
                             </a>
                         </div>

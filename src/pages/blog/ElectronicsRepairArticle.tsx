@@ -1,6 +1,7 @@
+import { WhatsAppIcon } from '../../components/icons/WhatsAppIcon';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
-import { PhoneCall, MessageSquare, MapPin, Cpu, CheckCircle2, ArrowRight } from 'lucide-react';
+import { PhoneCall, MapPin, Cpu, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function ElectronicsRepairArticle() {
     const faqData = [
@@ -205,7 +206,7 @@ export default function ElectronicsRepairArticle() {
                                         <PhoneCall className="w-5 h-5" /> Call Now
                                     </a>
                                     <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
-                                        <MessageSquare className="w-5 h-5" /> WhatsApp Us
+                                        <WhatsAppIcon className="w-5 h-5" /> WhatsApp Us
                                     </a>
                                     <a href="https://maps.app.goo.gl/mJXH2CsENMQ7byXd8" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
                                         <MapPin className="w-5 h-5" /> View on Maps

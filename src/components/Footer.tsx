@@ -1,5 +1,6 @@
+import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -54,7 +55,7 @@ export default function Footer() {
                                 <a href="tel:+966566149219" className="hover:text-white transition-colors">+966 56 614 9219</a>
                             </li>
                             <li className="flex items-center gap-3">
-                                <MessageSquare className="w-5 h-5 text-accent shrink-0" />
+                                <WhatsAppIcon className="w-5 h-5 text-accent shrink-0" />
                                 <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a>
                             </li>
                             <li className="flex items-center gap-3">
