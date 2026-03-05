@@ -40,8 +40,8 @@ export default function Contact() {
         {
             icon: Mail,
             label: "Email",
-            value: "info@perfectenergysolution.com",
-            href: "mailto:info@perfectenergysolution.com",
+            value: "Ksa.pes@gmail.com",
+            href: "mailto:Ksa.pes@gmail.com",
             color: "bg-secondary/10 text-secondary"
         },
         {

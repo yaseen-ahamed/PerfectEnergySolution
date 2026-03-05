@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, PhoneCall } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -59,7 +60,7 @@ export default function Navbar() {
                             rel="noreferrer"
                             className="flex items-center gap-2 bg-gradient-to-r from-accent to-emerald-500 hover:to-emerald-400 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 border border-emerald-400/50"
                         >
-                            <PhoneCall className="w-4 h-4" />
+                            <WhatsAppIcon className="w-4 h-4" />
                             <span>WhatsApp Us</span>
                         </a>
                     </div>
@@ -105,7 +106,7 @@ export default function Navbar() {
                             rel="noreferrer"
                             className="flex items-center justify-center gap-2 bg-gradient-to-r from-accent to-emerald-500 text-white px-5 py-3.5 rounded-2xl font-medium transition-all w-full shadow-sm hover:shadow-md"
                         >
-                            <PhoneCall className="w-5 h-5" />
+                            <WhatsAppIcon className="w-5 h-5" />
                             <span>WhatsApp Us</span>
                         </a>
                     </div>

@@ -379,8 +379,13 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="bg-primary rounded-[2.5rem] p-12 text-white relative flex flex-col justify-center min-h-[350px] shadow-lg bento-card-hover group overflow-hidden border border-borderGrey/20">
-                            <div className="absolute top-0 right-0 w-80 h-80 bg-accent/30 rounded-full blur-[80px] pointer-events-none group-hover:scale-125 transition-transform duration-1000 origin-center"></div>
-                            <div className="absolute bottom-0 left-0 w-80 h-80 bg-emerald-500/20 rounded-full blur-[80px] pointer-events-none group-hover:scale-125 transition-transform duration-1000 origin-center"></div>
+                            <div className="absolute inset-0 z-0 mix-blend-luminosity opacity-40 group-hover:opacity-60 transition-opacity duration-1000">
+                                <img src="/saudi_flag_abstract.png" alt="Saudi Arabia Abstract Background" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/30 to-transparent"></div>
+                            </div>
+                            <div className="absolute top-0 right-0 w-80 h-80 bg-accent/30 rounded-full blur-[80px] pointer-events-none group-hover:scale-125 transition-transform duration-1000 origin-center z-0"></div>
+                            <div className="absolute bottom-0 left-0 w-80 h-80 bg-emerald-500/40 rounded-full blur-[80px] pointer-events-none group-hover:scale-125 transition-transform duration-1000 origin-center z-0"></div>
                             <div className="relative z-10">
                                 <div className="w-14 h-14 bg-white/10 rounded-2xl border border-white/20 flex items-center justify-center mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-500 shadow-sm">
                                     <Building2 className="w-7 h-7 text-white" />
@@ -446,29 +451,31 @@ export default function Home() {
                                 <img src="/Perfect Energy Solution RIyadh 4.webp" alt="Perfect Energy Solution Riyadh Headquarters" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                         </Link>
-                        <Link to="/locations/kochi" className="bento-card p-2 relative overflow-hidden shadow-sm hover-3d flex flex-col justify-between group bg-white border border-borderGrey/60">
+                        <Link to="/locations/kochi" className="bento-card bg-primary p-2 relative overflow-hidden shadow-sm hover-3d flex flex-col justify-between group border border-borderGrey/10">
+                            <div className="absolute -top-24 -left-24 w-48 h-48 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
                             <div className="relative z-10 p-6 mb-4">
-                                <div className="w-12 h-12 bg-background border border-borderGrey rounded-xl mb-4 flex items-center justify-center shadow-sm">
-                                    <MapPin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                                <div className="w-12 h-12 bg-white/10 rounded-xl mb-4 flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-sm">
+                                    <MapPin className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                                 </div>
-                                <h3 className="text-2xl font-heading font-bold text-textDark mb-2">Kochi</h3>
-                                <span className="text-gray-500 text-xs font-bold tracking-wider uppercase mb-3 block group-hover:text-accent transition-colors">Regional Support</span>
-                                <p className="text-gray-500 font-sans leading-relaxed text-sm">Supporting clients with regional coordination and technical resources.</p>
+                                <h3 className="text-2xl font-heading font-bold text-white mb-2">Kochi</h3>
+                                <span className="text-accent text-xs font-bold tracking-wider uppercase mb-3 block group-hover:text-emerald-400 transition-colors">Regional Support</span>
+                                <p className="text-gray-300 font-sans leading-relaxed text-sm">Supporting clients with regional coordination and technical resources.</p>
                             </div>
-                            <div className="relative z-10 rounded-[1.25rem] overflow-hidden mt-auto bg-background border border-borderGrey flex-shrink-0 aspect-video shadow-inner">
+                            <div className="relative z-10 rounded-[1.25rem] overflow-hidden mt-auto bg-white/5 border border-white/10 flex-shrink-0 aspect-video shadow-inner">
                                 <img src="/Perfect Energy Solution Kochi.jpg" alt="Perfect Energy Solution Kochi Regional Office" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                         </Link>
-                        <Link to="/locations/dubai" className="bento-card p-2 relative overflow-hidden shadow-sm hover-3d flex flex-col justify-between group bg-white border border-borderGrey/60">
+                        <Link to="/locations/dubai" className="bento-card bg-primary p-2 relative overflow-hidden shadow-sm hover-3d flex flex-col justify-between group border border-borderGrey/10">
+                            <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-secondary/20 rounded-full blur-3xl pointer-events-none transition-transform duration-700 group-hover:scale-150"></div>
                             <div className="relative z-10 p-6 mb-4">
-                                <div className="w-12 h-12 bg-background border border-borderGrey rounded-xl mb-4 flex items-center justify-center shadow-sm">
-                                    <MapPin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                                <div className="w-12 h-12 bg-white/10 rounded-xl mb-4 flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-sm">
+                                    <MapPin className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                                 </div>
-                                <h3 className="text-2xl font-heading font-bold text-textDark mb-2">Dubai</h3>
-                                <span className="text-gray-500 text-xs font-bold tracking-wider uppercase mb-3 block group-hover:text-accent transition-colors">Regional Support</span>
-                                <p className="text-gray-500 font-sans leading-relaxed text-sm">Extending services across the broader Gulf region.</p>
+                                <h3 className="text-2xl font-heading font-bold text-white mb-2">Dubai</h3>
+                                <span className="text-accent text-xs font-bold tracking-wider uppercase mb-3 block group-hover:text-emerald-400 transition-colors">Regional Support</span>
+                                <p className="text-gray-300 font-sans leading-relaxed text-sm">Extending services across the broader Gulf region.</p>
                             </div>
-                            <div className="relative z-10 rounded-[1.25rem] overflow-hidden mt-auto bg-background border border-borderGrey flex-shrink-0 aspect-video shadow-inner">
+                            <div className="relative z-10 rounded-[1.25rem] overflow-hidden mt-auto bg-white/5 border border-white/10 flex-shrink-0 aspect-video shadow-inner">
                                 <img src="/Perfect Energy Solution Dubai.webp" alt="Perfect Energy Solution Dubai Regional Office" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                         </Link>

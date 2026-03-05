@@ -60,7 +60,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                                <a href="mailto:info@perfectenergysolution.com" className="hover:text-white transition-colors">Email Us</a>
+                                <a href="mailto:Ksa.pes@gmail.com" className="hover:text-white transition-colors">Email Us</a>
                             </li>
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" />

@@ -30,7 +30,7 @@
   }
 }
 
-@layer utilities {
+@layer components {
   .bento-card {
     @apply bg-white rounded-[2rem] shadow-sm border border-borderGrey transition-all duration-300;
   }
