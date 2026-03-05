@@ -254,7 +254,7 @@ export default function ElectronicsRepair() {
                             {[
                                 { title: "Electrical Services", slug: "electrical-services", desc: "Electrical installation and maintenance in Riyadh." },
                                 { title: "Networking Solutions", slug: "networking-solutions", desc: "Office network setup and IT support." },
-                                { title: "Solar & Energy Solutions", slug: "solar-solutions", desc: "Solar panel installation and energy management." }
+                                { title: "SIM Card Services", slug: "sim-card-services", desc: "SIM activation, recharge, and plans." }
                             ].map((link, idx) => (
                                 <Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group">
                                     <div>

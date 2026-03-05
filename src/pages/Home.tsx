@@ -1,5 +1,5 @@
 import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
-import { ArrowRight, PhoneCall, Zap, ShieldCheck, Clock, MapPin, Cpu, Network, Camera, Wrench, Users, Building2, Store, Briefcase, Factory, CheckCircle2, Sun } from 'lucide-react';
+import { ArrowRight, PhoneCall, Zap, ShieldCheck, Clock, MapPin, Cpu, Network, Camera, Wrench, Users, Building2, Store, Briefcase, Factory, CheckCircle2, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { TestimonialsSection } from '../components/blocks/testimonials-with-marquee';
 import { SEO } from '../components/SEO';
@@ -80,10 +80,10 @@ export default function Home() {
             slug: "technical-support"
         },
         {
-            icon: Sun,
-            title: "Solar & Energy Solutions",
-            desc: "Professional solar panel installation and energy management for sustainable power.",
-            slug: "solar-solutions"
+            icon: Smartphone,
+            title: "SIM Card Services",
+            desc: "SIM card activation, purchasing, mobile recharge, and data plans from all carriers.",
+            slug: "sim-card-services"
         }
     ];
 
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
                 title="Technical Services Company in Riyadh Saudi Arabia | Perfect Energy Solution"
-                description="Perfect Energy Solution — Riyadh's leading provider of electronics repair, CCTV installation, networking solutions, electrical services, solar energy, and technical support for homes and businesses in Saudi Arabia."
+                description="Perfect Energy Solution — Riyadh's leading provider of electronics repair, CCTV installation, networking solutions, electrical services, SIM card services, and technical support for homes and businesses in Saudi Arabia."
                 canonicalUrl="/"
                 jsonLdSchema={[
                     {
@@ -177,11 +177,11 @@ export default function Home() {
                             </h1>
 
                             <p className="text-lg text-gray-300 font-sans mb-4 max-w-xl leading-relaxed">
-                                Electronics repair, networking solutions, CCTV security systems, electrical services, solar energy, and complete technical support in Riyadh, Saudi Arabia — delivered with precision and reliability.
+                                Electronics repair, networking solutions, CCTV security systems, electrical services, SIM card services, and complete technical support in Riyadh, Saudi Arabia — delivered with precision and reliability.
                             </p>
 
                             <p className="text-base text-gray-400 font-sans mb-8 max-w-xl leading-relaxed">
-                                Perfect Energy Solution is a professional technical services company based in Riyadh, Saudi Arabia. Our experienced technicians deliver dependable solutions across electronics repair, networking infrastructure, CCTV security systems, electrical installation, solar panel systems, and general technical support for homes, offices, and commercial facilities.
+                                Perfect Energy Solution is a professional technical services company based in Riyadh, Saudi Arabia. Our experienced technicians deliver dependable solutions across electronics repair, networking infrastructure, CCTV security systems, electrical installation, SIM card services, and general technical support for homes, offices, and commercial facilities.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -239,7 +239,7 @@ export default function Home() {
                         </div>
                         <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-4">Professional Technical Services in Riyadh</h2>
                         <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed">
-                            Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Saudi Arabia — from electronics repair and CCTV installation to networking, electrical work, and solar energy solutions.
+                            Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Saudi Arabia — from electronics repair and CCTV installation to networking, electrical work, and SIM card services.
                         </p>
                     </div>
 

@@ -1,5 +1,5 @@
 import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
-import { Cpu, Network, Camera, Zap, Wrench, CheckCircle2, PhoneCall, Sun, ArrowRight } from 'lucide-react';
+import { Cpu, Network, Camera, Zap, Wrench, CheckCircle2, PhoneCall, Smartphone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 
@@ -106,26 +106,26 @@ export default function Services() {
             slug: "technical-support"
         },
         {
-            id: "solar",
-            icon: Sun,
-            title: "Solar & Energy Solutions",
-            description: "We provide professional solar panel installation and energy management solutions for sustainable and cost-effective power.",
+            id: "simcard",
+            icon: Smartphone,
+            title: "SIM Card Services",
+            description: "We provide SIM card activation, purchasing, mobile recharge, and data plans from all major Saudi carriers.",
             items: [
-                "Solar panel installation",
-                "Energy system design & consultation",
-                "Inverter setup & maintenance",
-                "Battery storage solutions",
-                "Energy efficiency audits"
+                "New SIM card sales & activation",
+                "Prepaid & postpaid plans",
+                "Mobile data recharge",
+                "Number portability (MNP)",
+                "Business & bulk SIM orders"
             ],
             benefits: [
-                "Reduced electricity bills",
-                "Sustainable energy source",
-                "Low maintenance systems"
+                "Instant activation",
+                "All major carriers",
+                "Competitive pricing"
             ],
-            color: "from-yellow-400/20 to-white/30",
-            accent: "text-yellow-500",
-            accentBg: "bg-yellow-500/10",
-            slug: "solar-solutions"
+            color: "from-purple-500/20 to-white/30",
+            accent: "text-purple-500",
+            accentBg: "bg-purple-500/10",
+            slug: "sim-card-services"
         }
     ];
 
@@ -133,7 +133,7 @@ export default function Services() {
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
                 title="Technical Services in Riyadh Saudi Arabia | Electronics, CCTV, Networking, Electrical"
-                description="Explore our full range of professional technical services in Riyadh including electronics repair, networking solutions, CCTV installation, electrical services, technical support, and solar energy solutions."
+                description="Explore our full range of professional technical services in Riyadh including electronics repair, networking solutions, CCTV installation, electrical services, technical support, and SIM card services."
                 canonicalUrl="/services"
                 jsonLdSchema={{
                     "@context": "https://schema.org",

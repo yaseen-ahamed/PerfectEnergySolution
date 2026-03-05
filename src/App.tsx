@@ -12,7 +12,7 @@ import NetworkingSolutions from './pages/services/NetworkingSolutions';
 import CctvInstallation from './pages/services/CctvInstallation';
 import ElectricalServices from './pages/services/ElectricalServices';
 import TechnicalSupport from './pages/services/TechnicalSupport';
-import SolarSolutions from './pages/services/SolarSolutions';
+import SimCardServices from './pages/services/SimCardServices';
 
 // New Location Pages
 import RiyadhLocation from './pages/locations/RiyadhLocation';
@@ -44,7 +44,7 @@ function App() {
           <Route path="services/cctv-installation" element={<CctvInstallation />} />
           <Route path="services/electrical-services" element={<ElectricalServices />} />
           <Route path="services/technical-support" element={<TechnicalSupport />} />
-          <Route path="services/solar-solutions" element={<SolarSolutions />} />
+          <Route path="services/sim-card-services" element={<SimCardServices />} />
 
           {/* Location Pages */}
           <Route path="locations/riyadh" element={<RiyadhLocation />} />

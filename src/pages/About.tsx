@@ -23,7 +23,7 @@ export default function About() {
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
                 title="About Perfect Energy Solution | Technical Services Company in Riyadh Since 2010"
-                description="Perfect Energy Solution is a Riyadh-based technical services company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and solar solutions across Saudi Arabia."
+                description="Perfect Energy Solution is a Riyadh-based technical services company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and SIM card services across Saudi Arabia."
                 canonicalUrl="/about"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default function About() {
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Perfect Energy Solution</span> — Riyadh
                     </h1>
                     <p className="text-lg text-textDark/70 font-sans leading-relaxed">
-                        Perfect Energy Solution is a professional technical services company based in Riyadh, Saudi Arabia, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, solar energy solutions, and general technical support for residential and commercial clients since 2010.
+                        Perfect Energy Solution is a professional technical services company based in Riyadh, Saudi Arabia, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, SIM card services, and general technical support for residential and commercial clients since 2010.
                     </p>
                 </div>
             </section>
