@@ -22,35 +22,31 @@ export default function Navbar() {
     const location = useLocation();
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-borderGrey bg-surface/90 backdrop-blur-md shadow-sm">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex h-20 items-center justify-between">
+        <header className="sticky top-4 z-50 w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto bg-surface/80 backdrop-blur-md border border-borderGrey shadow-sm rounded-full px-2 sm:px-6 transition-all">
+                <div className="flex h-16 items-center justify-between">
 
                     {/* Logo Section */}
-                    <Link to="/" className="flex items-center gap-2">
+                    <Link to="/" className="flex items-center gap-2 pl-2 sm:pl-0">
                         <img
                             src="/Perfect Energy Solution Logo.webp"
                             alt="Perfect Energy Solution Logo"
-                            className="h-12 w-auto object-contain"
+                            className="h-10 w-auto object-contain"
                         />
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden md:flex items-center gap-1 bg-background/50 p-1.5 rounded-full border border-borderGrey/50">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.path}
                                 to={link.path}
                                 className={cn(
-                                    "font-sans text-sm font-medium transition-colors hover:text-secondary relative group py-2",
-                                    location.pathname === link.path ? "text-secondary" : "text-textDark"
+                                    "font-sans text-sm font-medium transition-all duration-300 px-4 py-2 rounded-full",
+                                    location.pathname === link.path ? "bg-white text-accent shadow-sm" : "text-textDark hover:bg-white hover:text-primary hover:shadow-sm"
                                 )}
                             >
                                 {link.name}
-                                <span className={cn(
-                                    "absolute bottom-0 left-0 w-full h-0.5 bg-secondary transform origin-left transition-transform duration-300",
-                                    location.pathname === link.path ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-                                )}></span>
                             </Link>
                         ))}
                     </nav>
@@ -61,7 +57,7 @@ export default function Navbar() {
                             href="https://wa.me/966566149219"
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-2.5 rounded-md font-medium transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+                            className="flex items-center gap-2 bg-gradient-to-r from-accent to-emerald-500 hover:to-emerald-400 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5 border border-emerald-400/50"
                         >
                             <PhoneCall className="w-4 h-4" />
                             <span>WhatsApp Us</span>
@@ -84,8 +80,8 @@ export default function Navbar() {
             {/* Mobile Menu Drawer */}
             <div
                 className={cn(
-                    "md:hidden absolute top-20 left-0 w-full bg-surface border-b border-borderGrey shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40",
-                    isOpen ? "max-h-96 opacity-100 visible" : "max-h-0 opacity-0 invisible"
+                    "md:hidden absolute top-20 left-4 right-4 bg-surface border border-borderGrey rounded-3xl shadow-xl transition-all duration-300 ease-in-out overflow-hidden z-40 transform origin-top",
+                    isOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
                 )}
             >
                 <nav className="flex flex-col px-4 py-6 gap-4">
@@ -95,8 +91,8 @@ export default function Navbar() {
                             to={link.path}
                             onClick={() => setIsOpen(false)}
                             className={cn(
-                                "font-sans text-base font-medium px-4 py-3 rounded-md transition-colors",
-                                location.pathname === link.path ? "bg-background text-secondary" : "text-textDark hover:bg-background/50 hover:text-primary"
+                                "font-sans text-base font-medium px-5 py-3 rounded-2xl transition-all",
+                                location.pathname === link.path ? "bg-accent/10 text-accent font-semibold" : "text-textDark hover:bg-background hover:text-primary"
                             )}
                         >
                             {link.name}
@@ -107,7 +103,7 @@ export default function Navbar() {
                             href="https://wa.me/966566149219"
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white px-5 py-3 rounded-md font-medium transition-colors w-full"
+                            className="flex items-center justify-center gap-2 bg-gradient-to-r from-accent to-emerald-500 text-white px-5 py-3.5 rounded-2xl font-medium transition-all w-full shadow-sm hover:shadow-md"
                         >
                             <PhoneCall className="w-5 h-5" />
                             <span>WhatsApp Us</span>

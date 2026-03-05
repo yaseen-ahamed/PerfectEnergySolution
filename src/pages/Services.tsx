@@ -24,7 +24,8 @@ export default function Services() {
             color: "from-blue-500/20 to-secondary/30",
             accent: "text-blue-500",
             accentBg: "bg-blue-500/10",
-            slug: "electronics-repair"
+            slug: "electronics-repair",
+            image: "/electronics_repair.webp"
         },
         {
             id: "networking",
@@ -46,7 +47,8 @@ export default function Services() {
             color: "from-indigo-500/20 to-primary/30",
             accent: "text-indigo-400",
             accentBg: "bg-indigo-400/10",
-            slug: "networking-solutions"
+            slug: "networking-solutions",
+            image: "/networking_solutions.webp"
         },
         {
             id: "cctv",
@@ -67,7 +69,8 @@ export default function Services() {
             color: "from-accent/20 to-primary/30",
             accent: "text-accent",
             accentBg: "bg-accent/10",
-            slug: "cctv-installation"
+            slug: "cctv-installation",
+            image: "/cctv_security.webp"
         },
         {
             id: "electrical",
@@ -87,7 +90,8 @@ export default function Services() {
             color: "from-yellow-400/20 to-orange-500/30",
             accent: "text-amber-400",
             accentBg: "bg-amber-400/10",
-            slug: "electrical-services"
+            slug: "electrical-services",
+            image: "/electrical_services.webp"
         },
         {
             id: "support",
@@ -103,7 +107,8 @@ export default function Services() {
             color: "from-emerald-500/20 to-accent/30",
             accent: "text-emerald-400",
             accentBg: "bg-emerald-400/10",
-            slug: "technical-support"
+            slug: "technical-support",
+            image: "/tech_support.webp"
         },
         {
             id: "simcard",
@@ -125,7 +130,8 @@ export default function Services() {
             color: "from-purple-500/20 to-white/30",
             accent: "text-purple-500",
             accentBg: "bg-purple-500/10",
-            slug: "sim-card-services"
+            slug: "sim-card-services",
+            image: "/sim_services.webp"
         }
     ];
 
@@ -167,61 +173,51 @@ export default function Services() {
                 </div>
 
                 {/* Detailed Service Sections */}
-                <div className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={service.id}
                             id={service.id}
-                            className="bg-white rounded-3xl p-8 md:p-10 border border-borderGrey shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden"
+                            className="bento-card group hover-3d block overflow-hidden bg-white border border-borderGrey/50 p-2 flex flex-col"
                         >
-                            <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}></div>
-
-                            <div className="relative z-10">
-                                <div className="flex flex-col md:flex-row md:items-start gap-8">
-                                    {/* Service Header */}
-                                    <div className="md:w-1/2">
-                                        <div className="flex items-center gap-4 mb-6">
-                                            <div className={`w-14 h-14 rounded-2xl ${service.accentBg} flex items-center justify-center ${service.accent} group-hover:scale-110 transition-transform duration-500`}>
-                                                <service.icon className="w-7 h-7" />
-                                            </div>
-                                            <span className="text-sm font-semibold text-gray-400">0{index + 1}</span>
+                            <div className="flex flex-col h-full bg-white rounded-[1.75rem] border border-borderGrey overflow-hidden">
+                                <div className="w-full aspect-square relative bg-gray-50 border-b border-borderGrey shrink-0 overflow-hidden bento-image-container">
+                                    <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 z-10 pointer-events-none"></div>
+                                    <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1s] ease-out" loading="lazy" />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className={`w-12 h-12 rounded-[1rem] ${service.accentBg} flex items-center justify-center ${service.accent} group-hover:scale-110 transition-transform duration-500 border border-borderGrey shadow-sm shrink-0`}>
+                                            <service.icon className="w-5 h-5" />
                                         </div>
-                                        <h2 className="text-2xl md:text-3xl font-heading font-bold text-textDark mb-4">{service.title}</h2>
-                                        <p className="text-gray-600 font-sans leading-relaxed text-lg">{service.description}</p>
+                                        <span className="text-sm font-semibold text-gray-400">0{index + 1}</span>
                                     </div>
+                                    <h2 className="text-xl font-heading font-bold text-textDark mb-3 tracking-tight group-hover:text-accent transition-colors duration-300">{service.title}</h2>
+                                    <p className="text-gray-500 text-sm font-sans leading-relaxed mb-6 flex-grow">{service.description}</p>
 
-                                    {/* Services & Benefits */}
-                                    <div className="md:w-1/2 space-y-6">
+                                    <div className="space-y-4">
                                         <div>
-                                            <h4 className="font-heading font-semibold text-textDark mb-3 text-sm uppercase tracking-wider">Services Include</h4>
+                                            <h4 className="font-heading font-semibold text-textDark mb-3 text-xs uppercase tracking-wider">Services Include</h4>
                                             <ul className="space-y-2">
                                                 {service.items.map((item, idx) => (
-                                                    <li key={idx} className="flex items-center gap-3 text-gray-700 font-sans">
-                                                        <CheckCircle2 className={`w-4 h-4 shrink-0 ${service.accent}`} />
-                                                        {item}
+                                                    <li key={idx} className="flex items-start gap-2 text-gray-600 font-sans text-sm">
+                                                        <CheckCircle2 className={`w-4 h-4 shrink-0 mt-0.5 ${service.accent}`} />
+                                                        <span className="leading-snug">{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
                                         </div>
-
-                                        {service.benefits.length > 0 && (
-                                            <div>
-                                                <h4 className="font-heading font-semibold text-textDark mb-3 text-sm uppercase tracking-wider">Benefits</h4>
-                                                <div className="flex flex-wrap gap-2">
-                                                    {service.benefits.map((benefit, idx) => (
-                                                        <span key={idx} className={`px-3 py-1.5 rounded-full text-sm font-medium ${service.accentBg} ${service.accent}`}>
-                                                            {benefit}
-                                                        </span>
-                                                    ))}
-                                                </div>
+                                    </div>
+                                    <div className="mt-8">
+                                        <Link to={`/services/${service.slug}`} className={`inline-flex items-center justify-between w-full p-4 bg-background border border-borderGrey rounded-xl hover:border-accent/30 transition-colors group/btn`}>
+                                            <span className="font-semibold text-primary text-sm uppercase tracking-wider group-hover/btn:text-accent transition-colors">View Details</span>
+                                            <div className={`w-8 h-8 rounded-full bg-white border border-borderGrey flex items-center justify-center text-primary group-hover/btn:bg-accent group-hover/btn:text-white group-hover/btn:border-accent transition-colors duration-300 shadow-sm`}>
+                                                <ArrowRight className="w-4 h-4" />
                                             </div>
-                                        )}
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
-                            <Link to={`/services/${service.slug}`} className={`inline-flex items-center gap-2 mt-6 font-semibold ${service.accent} hover:gap-3 transition-all`}>
-                                View Full Details <ArrowRight className="w-4 h-4" />
-                            </Link>
                         </div>
                     ))}
                 </div>

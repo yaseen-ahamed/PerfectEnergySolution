@@ -86,16 +86,21 @@ export default function ElectronicsRepair() {
                                 </a>
                             </div>
                         </div>
-                        <div className="bg-primary rounded-3xl p-10 text-white relative overflow-hidden">
-                            <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
-                            <h3 className="text-xl font-heading font-bold text-white mb-6">Quick Service Overview</h3>
-                            <ul className="space-y-3">
-                                {["Device diagnostics & repair", "Circuit board (PCB) repair", "Component replacement & soldering", "Electronic maintenance & calibration", "Electronic equipment sales", "Genuine spare parts"].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3 text-gray-200">
-                                        <CheckCircle2 className="w-5 h-5 text-accent shrink-0" /> {item}
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="space-y-6 lg:ml-10">
+                            <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
+                                <img src="/electronics_repair.webp" alt="Electronics Repair" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                            <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
+                                <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+                                <h3 className="text-lg font-heading font-bold text-white mb-4">Quick Service Overview</h3>
+                                <ul className="space-y-2">
+                                    {["Device diagnostics & repair", "Circuit board (PCB) repair", "Component replacement & soldering", "Electronic maintenance & calibration", "Electronic equipment sales", "Genuine spare parts"].map((item, i) => (
+                                        <li key={i} className="flex items-center gap-3 text-gray-200 text-sm">
+                                            <CheckCircle2 className="w-4 h-4 text-accent shrink-0" /> {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>

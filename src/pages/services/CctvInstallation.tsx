@@ -31,10 +31,15 @@ export default function CctvInstallation() {
                                 <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border border-borderGrey px-8 py-4 rounded-xl font-semibold transition-all transform hover:-translate-y-1"><WhatsAppIcon className="w-5 h-5 text-green-500" /> WhatsApp Us</a>
                             </div>
                         </div>
-                        <div className="bg-primary rounded-3xl p-10 text-white relative overflow-hidden">
-                            <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
-                            <h3 className="text-xl font-heading font-bold text-white mb-6">What We Install</h3>
-                            <ul className="space-y-3">{["HD & 4K security cameras", "Indoor & outdoor systems", "Night vision cameras", "DVR/NVR recording systems", "Remote mobile monitoring", "Access control systems"].map((item, i) => (<li key={i} className="flex items-center gap-3 text-gray-200"><CheckCircle2 className="w-5 h-5 text-accent shrink-0" /> {item}</li>))}</ul>
+                        <div className="space-y-6 lg:ml-10">
+                            <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
+                                <img src="/cctv_security.webp" alt="CCTV & Security Systems" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                            </div>
+                            <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
+                                <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+                                <h3 className="text-lg font-heading font-bold text-white mb-4">What We Install</h3>
+                                <ul className="space-y-2">{["HD & 4K security cameras", "Indoor & outdoor systems", "Night vision cameras", "DVR/NVR recording systems", "Remote mobile monitoring", "Access control systems"].map((item, i) => (<li key={i} className="flex items-center gap-3 text-gray-200 text-sm"><CheckCircle2 className="w-4 h-4 text-accent shrink-0" /> {item}</li>))}</ul>
+                            </div>
                         </div>
                     </div>
                 </section>

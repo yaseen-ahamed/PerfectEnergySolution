@@ -30,6 +30,40 @@
   }
 }
 
+@layer utilities {
+  .bento-card {
+    @apply bg-white rounded-[2rem] shadow-sm border border-borderGrey transition-all duration-300;
+  }
+
+  .bento-card-hover {
+    @apply hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .bento-image-container {
+    @apply rounded-[1.5rem] overflow-hidden bg-background;
+  }
+
+  .hover-3d {
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .hover-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale3d(1.02, 1.02, 1.02);
+    box-shadow: -10px 15px 35px rgba(0, 0, 0, 0.08);
+  }
+
+  .hover-3d-reverse {
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .hover-3d-reverse:hover {
+    transform: perspective(1000px) rotateX(-2deg) rotateY(2deg) scale3d(1.02, 1.02, 1.02);
+    box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.08);
+  }
+}
+
 ::selection {
   background-color: theme('colors.accent');
   color: white;
