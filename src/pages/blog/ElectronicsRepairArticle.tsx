@@ -202,7 +202,7 @@ export default function ElectronicsRepairArticle() {
                                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Need Electronics Repair in Riyadh?</h2>
                                 <p className="text-gray-300 font-sans text-lg mb-8">Contact Perfect Energy Solution for fast, reliable electronics repair with genuine parts and warranty.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <a href="tel:+966566149219" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1">
+                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1">
                                         <PhoneCall className="w-5 h-5" /> Call Now
                                     </a>
                                     <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">

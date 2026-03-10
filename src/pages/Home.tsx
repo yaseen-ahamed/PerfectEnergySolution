@@ -242,7 +242,7 @@ export default function Home() {
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a
-                                    href="tel:+966566149219"
+                                    href="tel:+966556704985"
                                     className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-[#1a2b45] hover:from-[#1a2b45] hover:to-primary text-white px-8 py-4 rounded-2xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
                                 >
                                     <PhoneCall className="w-5 h-5" />
@@ -504,7 +504,7 @@ export default function Home() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a
-                                    href="tel:+966566149219"
+                                    href="tel:+966556704985"
                                     className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-accent to-emerald-500 hover:from-emerald-500 hover:to-accent text-white font-semibold px-8 py-4 rounded-xl shadow-[0_8px_30px_rgb(15,169,88,0.3)] transition-all transform hover:-translate-y-1 border border-emerald-400/50"
                                 >
                                     <PhoneCall className="w-5 h-5" />

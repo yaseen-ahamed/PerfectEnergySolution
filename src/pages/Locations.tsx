@@ -65,9 +65,9 @@ export default function Locations() {
                                     Our headquarters and primary service region. We provide comprehensive technical services including electronics repair, networking, CCTV installation, and electrical services across the Kingdom.
                                 </p>
                                 <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
-                                    <a href="tel:+966566149219" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
+                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
                                         <PhoneCall className="w-6 h-6" />
-                                        +966 56 614 9219
+                                        +966 55 670 4985
                                     </a>
                                     <Link to="/locations/riyadh" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
                                         View Riyadh Office <ArrowRight className="w-5 h-5" />
@@ -128,7 +128,7 @@ export default function Locations() {
                                     Supporting clients with regional coordination, technical resources, and back-office support operations. Providing a seamless flow of expertise.
                                 </p>
                                 <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
-                                    <a href="tel:+919544033344" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
+                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
                                         <PhoneCall className="w-6 h-6" />
                                         +91 95440 33344
                                     </a>
@@ -193,7 +193,7 @@ export default function Locations() {
                         <p className="text-gray-300 font-sans text-lg mb-8">Our team is ready to assist you wherever you are.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="tel:+966566149219"
+                                href="tel:+966556704985"
                                 className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1"
                             >
                                 <PhoneCall className="w-5 h-5" />

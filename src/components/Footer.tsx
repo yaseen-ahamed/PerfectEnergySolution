@@ -50,13 +50,19 @@ export default function Footer() {
                     <div>
                         <h3 className="font-heading font-semibold tracking-wider text-sm text-white mb-6 uppercase">Contact Us</h3>
                         <ul className="space-y-4 font-sans text-sm text-gray-400">
-                            <li className="flex items-center gap-3">
-                                <Phone className="w-5 h-5 text-accent shrink-0" />
-                                <a href="tel:+966566149219" className="hover:text-white transition-colors">+966 56 614 9219</a>
+                            <li className="flex items-start gap-3">
+                                <Phone className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                                <div className="flex flex-col gap-1">
+                                    <a href="tel:+966556704985" className="hover:text-white transition-colors">+966 55 670 4985</a>
+                                    <a href="tel:+966566149219" className="hover:text-white transition-colors">+966 56 614 9219</a>
+                                </div>
                             </li>
-                            <li className="flex items-center gap-3">
-                                <WhatsAppIcon className="w-5 h-5 text-accent shrink-0" />
-                                <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a>
+                            <li className="flex items-start gap-3">
+                                <WhatsAppIcon className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                                <div className="flex flex-col gap-1">
+                                    <a href="https://wa.me/966556704985" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">+966 55 670 4985</a>
+                                    <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">+966 56 614 9219</a>
+                                </div>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-accent shrink-0" />

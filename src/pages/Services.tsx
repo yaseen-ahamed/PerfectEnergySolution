@@ -232,7 +232,7 @@ export default function Services() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="tel:+966566149219"
+                                href="tel:+966556704985"
                                 className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1"
                             >
                                 <PhoneCall className="w-5 h-5" />

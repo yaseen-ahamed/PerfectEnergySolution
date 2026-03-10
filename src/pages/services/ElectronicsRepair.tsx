@@ -78,7 +78,7 @@ export default function ElectronicsRepair() {
                                 Serving residential customers, small businesses, retail stores, and commercial facilities across all major districts in Riyadh, we combine advanced diagnostic tools with years of hands-on expertise to get your electronics running smoothly.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:+966566149219" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg transform hover:-translate-y-1">
+                                <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg transform hover:-translate-y-1">
                                     <PhoneCall className="w-5 h-5" /> Book a Repair Service
                                 </a>
                                 <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border border-borderGrey px-8 py-4 rounded-xl font-semibold transition-all transform hover:-translate-y-1">
@@ -302,7 +302,7 @@ export default function ElectronicsRepair() {
                                     Need a device repaired or looking to buy electronic components? Our team is ready to help.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <a href="tel:+966566149219" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1">
+                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1">
                                         <PhoneCall className="w-5 h-5" /> Call Now
                                     </a>
                                     <a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">

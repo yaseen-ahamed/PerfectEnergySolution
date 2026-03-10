@@ -26,7 +26,7 @@ export default function Contact() {
         {
             icon: PhoneCall,
             label: "Phone",
-            value: "+966 56 614 9219",
+            value: "+966 55 670 4985",
             href: "tel:+966566149219",
             color: "bg-blue-500/10 text-blue-500"
         },
@@ -227,7 +227,7 @@ export default function Contact() {
                         <p className="text-gray-300 font-sans text-lg mb-8">Call or WhatsApp us now.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="tel:+966566149219"
+                                href="tel:+966556704985"
                                 className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1"
                             >
                                 <PhoneCall className="w-5 h-5" />
