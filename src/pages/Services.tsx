@@ -1,31 +1,45 @@
 import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
-import { Cpu, Network, Camera, Zap, Wrench, CheckCircle2, PhoneCall, Smartphone, ArrowRight } from 'lucide-react';
+import { Laptop, Paperclip, Network, Camera, Zap, CheckCircle2, PhoneCall, Smartphone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 
 export default function Services() {
     const services = [
         {
-            id: "electronics",
-            icon: Cpu,
-            title: "Electronics Sales & Repair",
-            description: "We provide repair and maintenance services for various electronic devices.",
+            id: "laptop",
+            icon: Laptop,
+            title: "Laptop & Mobile Sales and Repair",
+            description: "Professional laptop and smartphone solutions including device sales, hardware repair, software troubleshooting, upgrades, and maintenance for individuals and businesses.",
             items: [
-                "Electronic device repair",
-                "Component troubleshooting",
-                "Hardware servicing",
-                "Electronic product sales"
+                "Laptop repair & Sales",
+                "Smartphone repair & OS installation",
+                "Data recovery & Hardware upgrades",
+                "Battery & Screen replacement"
             ],
-            benefits: [
-                "Extend device lifespan",
-                "Reduce replacement costs",
-                "Professional repair"
-            ],
+            benefits: [],
             color: "from-blue-500/20 to-secondary/30",
             accent: "text-blue-500",
             accentBg: "bg-blue-500/10",
-            slug: "electronics-repair",
-            image: "/electronics_repair.webp"
+            slug: "laptop-mobile",
+            image: "/laptop_mobile.png"
+        },
+        {
+            id: "stationery",
+            icon: Paperclip,
+            title: "Office Stationery & Supplies",
+            description: "We supply essential office materials for businesses, schools, and workplaces including everything you need for a productive environment.",
+            items: [
+                "Print paper & Filing folders",
+                "Printer ink & toner",
+                "Pens, markers & sticky notes",
+                "Desk organizers & Office accessories"
+            ],
+            benefits: [],
+            color: "from-indigo-500/20 to-primary/30",
+            accent: "text-indigo-400",
+            accentBg: "bg-indigo-400/10",
+            slug: "office-stationery",
+            image: "/office_stationery.png"
         },
         {
             id: "networking",
@@ -36,17 +50,12 @@ export default function Services() {
                 "Network installation",
                 "Router and switch configuration",
                 "Office networking setup",
-                "Software troubleshooting",
-                "Technical IT support"
+                "Software troubleshooting"
             ],
-            benefits: [
-                "Improved connectivity",
-                "Better office productivity",
-                "Reliable network infrastructure"
-            ],
-            color: "from-indigo-500/20 to-primary/30",
-            accent: "text-indigo-400",
-            accentBg: "bg-indigo-400/10",
+            benefits: [],
+            color: "from-accent/20 to-primary/30",
+            accent: "text-accent",
+            accentBg: "bg-accent/10",
             slug: "networking-solutions",
             image: "/networking_solutions.webp"
         },
@@ -61,14 +70,10 @@ export default function Services() {
                 "Surveillance system maintenance",
                 "Security system upgrades"
             ],
-            benefits: [
-                "Property protection",
-                "Remote monitoring",
-                "Improved safety"
-            ],
-            color: "from-accent/20 to-primary/30",
-            accent: "text-accent",
-            accentBg: "bg-accent/10",
+            benefits: [],
+            color: "from-amber-400/20 to-orange-500/30",
+            accent: "text-amber-500",
+            accentBg: "bg-amber-500/10",
             slug: "cctv-installation",
             image: "/cctv_security.webp"
         },
@@ -83,32 +88,12 @@ export default function Services() {
                 "Fault detection and repair",
                 "Electrical system upgrades"
             ],
-            benefits: [
-                "Safe electrical systems",
-                "Reliable power distribution"
-            ],
-            color: "from-yellow-400/20 to-orange-500/30",
-            accent: "text-amber-400",
-            accentBg: "bg-amber-400/10",
+            benefits: [],
+            color: "from-emerald-500/20 to-primary/30",
+            accent: "text-emerald-500",
+            accentBg: "bg-emerald-500/10",
             slug: "electrical-services",
             image: "/electrical_services.webp"
-        },
-        {
-            id: "support",
-            icon: Wrench,
-            title: "General Technical Services",
-            description: "We offer a variety of technical services that help businesses and homes operate efficiently.",
-            items: [
-                "Office technical support",
-                "Equipment installation",
-                "General troubleshooting"
-            ],
-            benefits: [],
-            color: "from-emerald-500/20 to-accent/30",
-            accent: "text-emerald-400",
-            accentBg: "bg-emerald-400/10",
-            slug: "technical-support",
-            image: "/tech_support.webp"
         },
         {
             id: "simcard",
@@ -119,14 +104,9 @@ export default function Services() {
                 "New SIM card sales & activation",
                 "Prepaid & postpaid plans",
                 "Mobile data recharge",
-                "Number portability (MNP)",
                 "Business & bulk SIM orders"
             ],
-            benefits: [
-                "Instant activation",
-                "All major carriers",
-                "Competitive pricing"
-            ],
+            benefits: [],
             color: "from-purple-500/20 to-white/30",
             accent: "text-purple-500",
             accentBg: "bg-purple-500/10",
@@ -181,7 +161,7 @@ export default function Services() {
                             className="bento-card group hover-3d block overflow-hidden bg-white border border-borderGrey/50 p-2 flex flex-col"
                         >
                             <div className="flex flex-col h-full bg-white rounded-[1.75rem] border border-borderGrey overflow-hidden">
-                                <div className="w-full aspect-square relative bg-gray-50 border-b border-borderGrey shrink-0 overflow-hidden bento-image-container">
+                                <div className="w-full aspect-square relative border-b border-borderGrey shrink-0 overflow-hidden bento-image-container rounded-t-[1.75rem]">
                                     <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 z-10 pointer-events-none"></div>
                                     <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1s] ease-out" loading="lazy" />
                                 </div>

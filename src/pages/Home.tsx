@@ -1,5 +1,5 @@
 import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
-import { ArrowRight, PhoneCall, Zap, ShieldCheck, Clock, MapPin, Cpu, Network, Camera, Wrench, Users, Building2, Store, Briefcase, Factory, CheckCircle2, Smartphone } from 'lucide-react';
+import { ArrowRight, PhoneCall, Zap, ShieldCheck, Clock, MapPin, Network, Camera, Wrench, Users, Building2, Store, Briefcase, Factory, CheckCircle2, Smartphone, Laptop, Paperclip } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { TestimonialsSection } from '../components/blocks/testimonials-with-marquee';
 import { SEO } from '../components/SEO';
@@ -50,11 +50,18 @@ const testimonialsData = [
 export default function Home() {
     const services = [
         {
-            icon: Cpu,
-            title: "Electronics Sales & Repair",
-            desc: "Repair and maintenance of electronic devices and components.",
-            slug: "electronics-repair",
-            image: "/electronics_repair.webp"
+            icon: Laptop,
+            title: "Laptop & Mobile Sales and Repair",
+            desc: "Professional laptop and smartphone solutions including device sales, hardware repair, and maintenance.",
+            slug: "laptop-mobile",
+            image: "/laptop_mobile.png"
+        },
+        {
+            icon: Paperclip,
+            title: "Office Stationery & Supplies",
+            desc: "Essential office materials, print paper, and stationery supplies for businesses and workplaces.",
+            slug: "office-stationery",
+            image: "/office_stationery.png"
         },
         {
             icon: Network,
@@ -76,13 +83,6 @@ export default function Home() {
             desc: "Professional electrical installation and maintenance.",
             slug: "electrical-services",
             image: "/electrical_services.webp"
-        },
-        {
-            icon: Wrench,
-            title: "General Technical Services",
-            desc: "Comprehensive technical assistance for various office and home needs.",
-            slug: "technical-support",
-            image: "/tech_support.webp"
         },
         {
             icon: Smartphone,
@@ -229,16 +229,16 @@ export default function Home() {
                             </div>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-extrabold text-primary leading-[1.1] mb-6 tracking-tight">
-                                Technical &<br />
+                                <span className="text-textDark block">Perfect Energy Solution</span>
                                 <span className="bg-gradient-to-r from-accent to-emerald-500 bg-clip-text text-transparent relative inline-block pb-2">
-                                    Energy Solutions
+                                    Technical Services
                                     <div className="absolute bottom-1 right-0 left-0 h-2 bg-gradient-to-r from-accent/30 to-emerald-500/30 rounded-full blur-[2px]"></div>
                                 </span>
                             </h1>
 
-                            <p className="text-lg text-gray-600 font-sans mb-10 max-w-sm leading-relaxed font-light">
-                                Professional electronics repair, networking, CCTV, and electrical services in Riyadh. Premium, minimal, and dependable.
-                            </p>
+                            <h2 className="text-lg text-gray-600 font-sans mb-10 max-w-sm leading-relaxed font-light">
+                                Reliable electronics repair, networking solutions, CCTV installation, electrical services, and office equipment sales for homes and businesses across Riyadh.
+                            </h2>
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a
@@ -301,7 +301,7 @@ export default function Home() {
                         {services.map((service, idx) => (
                             <Link key={idx} to={`/services/${service.slug}`} className="bento-card group hover-3d block overflow-hidden bg-white border border-borderGrey/50 p-2">
                                 <div className="flex flex-col h-full bg-white rounded-[1.75rem] border border-borderGrey overflow-hidden">
-                                    <div className="w-full aspect-square bento-image-container relative bg-gray-50 border-b border-borderGrey shrink-0 overflow-hidden">
+                                    <div className="w-full aspect-[4/3] bento-image-container relative bg-gray-50 border-b border-borderGrey shrink-0 overflow-hidden rounded-t-[1.75rem]">
                                         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 z-10 pointer-events-none"></div>
                                         <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1s] ease-out" loading="lazy" />
                                     </div>
@@ -448,7 +448,7 @@ export default function Home() {
                                 <p className="text-gray-300 font-sans leading-relaxed text-sm">Our headquarters and primary service area, covering Riyadh and major cities.</p>
                             </div>
                             <div className="relative z-10 rounded-[1.25rem] overflow-hidden mt-auto bg-white/5 border border-white/10 aspect-video shrink-0 shadow-inner">
-                                <img src="/Perfect Energy Solution RIyadh 4.webp" alt="Perfect Energy Solution Riyadh Headquarters" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/Perfect Energy Solution RIyadh.webp" alt="Perfect Energy Solution Riyadh Headquarters" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                         </Link>
                         <Link to="/locations/kochi" className="bento-card bg-primary p-2 relative overflow-hidden shadow-sm hover-3d flex flex-col justify-between group border border-borderGrey/10">

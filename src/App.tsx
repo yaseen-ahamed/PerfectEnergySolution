@@ -7,11 +7,11 @@ import Locations from './pages/Locations';
 import Contact from './pages/Contact';
 
 // New Service Pages
-import ElectronicsRepair from './pages/services/ElectronicsRepair';
+import LaptopMobile from './pages/services/LaptopMobile';
+import OfficeStationery from './pages/services/OfficeStationery';
 import NetworkingSolutions from './pages/services/NetworkingSolutions';
 import CctvInstallation from './pages/services/CctvInstallation';
 import ElectricalServices from './pages/services/ElectricalServices';
-import TechnicalSupport from './pages/services/TechnicalSupport';
 import SimCardServices from './pages/services/SimCardServices';
 
 // New Location Pages
@@ -39,11 +39,11 @@ function App() {
           <Route path="contact" element={<Contact />} />
 
           {/* Service Pages */}
-          <Route path="services/electronics-repair" element={<ElectronicsRepair />} />
+          <Route path="services/laptop-mobile" element={<LaptopMobile />} />
+          <Route path="services/office-stationery" element={<OfficeStationery />} />
           <Route path="services/networking-solutions" element={<NetworkingSolutions />} />
           <Route path="services/cctv-installation" element={<CctvInstallation />} />
           <Route path="services/electrical-services" element={<ElectricalServices />} />
-          <Route path="services/technical-support" element={<TechnicalSupport />} />
           <Route path="services/sim-card-services" element={<SimCardServices />} />
 
           {/* Location Pages */}

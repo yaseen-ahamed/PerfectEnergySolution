@@ -37,7 +37,7 @@ export default function Locations() {
                     <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-textDark max-w-3xl mx-auto leading-tight mb-6">
                         Our Offices in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh, Dubai & Kochi</span>
                     </h1>
-                    <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed mb-0">
                         Perfect Energy Solution provides professional technical services across Saudi Arabia, UAE, and India from our three strategic office locations.
                     </p>
                 </div>
@@ -47,8 +47,6 @@ export default function Locations() {
 
                     {/* Saudi Arabia - Primary */}
                     <div className="relative rounded-[40px] bg-primary text-white border-primary shadow-2xl overflow-hidden group flex flex-col lg:flex-row hover:shadow-[0_0_30px_rgba(30,77,183,0.3)] transition-all cursor-pointer transform hover:-translate-y-1">
-                        <Link to="/locations/riyadh" className="absolute inset-0 z-0" aria-label="View Riyadh Location Details"></Link>
-
                         <div className="w-full lg:w-1/2 p-10 md:p-16 lg:p-20 relative flex flex-col justify-center pointer-events-none">
                             <div className="absolute -top-32 -right-32 w-64 h-64 bg-accent/30 rounded-full blur-3xl pointer-events-none"></div>
                             <div className="relative z-10">
@@ -61,17 +59,36 @@ export default function Locations() {
                                         <span className="text-sm font-bold tracking-widest uppercase text-accent">Primary Market</span>
                                     </div>
                                 </div>
-                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-10">
+                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-6">
                                     Our headquarters and primary service region. We provide comprehensive technical services including electronics repair, networking, CCTV installation, and electrical services across the Kingdom.
                                 </p>
-                                <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
-                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
-                                        <PhoneCall className="w-6 h-6" />
-                                        +966 55 670 4985
-                                    </a>
-                                    <Link to="/locations/riyadh" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
-                                        View Riyadh Office <ArrowRight className="w-5 h-5" />
-                                    </Link>
+                                <div className="pt-6 border-t border-white/20 pointer-events-auto relative z-20 flex flex-col gap-6">
+                                    <div>
+                                        <div className="w-full text-white/80 text-sm font-semibold uppercase tracking-wider mb-2">Riyadh Headquarters</div>
+                                        <div className="flex flex-wrap items-center gap-3">
+                                            <a href="tel:+9660532995602" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-5 py-3 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
+                                                <PhoneCall className="w-5 h-5" />
+                                                +966 053 299 5602
+                                            </a>
+                                            <a href="https://goo.gl/maps/rUxT3ffT5BM2" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-5 py-3 rounded-xl transition-all transform hover:-translate-y-1">
+                                                <MapPin className="w-5 h-5" />
+                                                View Map
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="border-t border-white/10 pt-4">
+                                        <div className="w-full text-white/80 text-sm font-semibold uppercase tracking-wider mb-2">Riyadh Technical Branch</div>
+                                        <div className="flex flex-wrap items-center gap-3">
+                                            <a href="tel:+9660530825121" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-5 py-3 rounded-xl transition-all transform hover:-translate-y-1">
+                                                <PhoneCall className="w-5 h-5" />
+                                                +966 053 082 5121
+                                            </a>
+                                            <a href="https://goo.gl/maps/VFu6AGh7yGv" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-5 py-3 rounded-xl transition-all transform hover:-translate-y-1">
+                                                <MapPin className="w-5 h-5" />
+                                                View Map
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,13 +100,13 @@ export default function Locations() {
                                             id: 1,
                                             title: "Riyadh Headquarters",
                                             description: "Our primary hub in Saudi Arabia.",
-                                            imageSrc: "/Perfect Energy Solution RIyadh 4.webp",
+                                            imageSrc: "/Perfect Energy Solution RIyadh.webp",
                                         },
                                         {
                                             id: 2,
                                             title: "Technical Operations",
                                             description: "Advanced facilities supporting the Kingdom.",
-                                            imageSrc: "/Perfect Energy Solution RIyadh.webp",
+                                            imageSrc: "/Perfect Energy Solution RIyadh 4.webp",
                                         },
                                         {
                                             id: 3,
@@ -110,8 +127,6 @@ export default function Locations() {
 
                     {/* Kochi */}
                     <div className="relative rounded-[40px] bg-primary text-white border-primary shadow-2xl overflow-hidden group flex flex-col lg:flex-row hover:shadow-[0_0_30px_rgba(30,77,183,0.3)] transition-all cursor-pointer transform hover:-translate-y-1">
-                        <Link to="/locations/kochi" className="absolute inset-0 z-0" aria-label="View Kochi Location Details"></Link>
-
                         <div className="w-full lg:w-1/2 p-10 md:p-16 lg:p-20 relative flex flex-col justify-center pointer-events-none">
                             <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-accent/30 rounded-full blur-3xl pointer-events-none"></div>
                             <div className="relative z-10">
@@ -124,17 +139,18 @@ export default function Locations() {
                                         <span className="text-sm font-bold tracking-widest uppercase text-accent">Regional Support</span>
                                     </div>
                                 </div>
-                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-10">
+                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-6">
                                     Supporting clients with regional coordination, technical resources, and back-office support operations. Providing a seamless flow of expertise.
                                 </p>
                                 <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
-                                    <a href="tel:+966556704985" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
-                                        <PhoneCall className="w-6 h-6" />
+                                    <a href="tel:+919544033344" className="inline-flex items-center justify-center gap-3 bg-accent hover:bg-emerald-500 text-white font-semibold px-6 py-4 rounded-xl shadow-[0_0_20px_rgba(15,169,88,0.4)] transition-all transform hover:-translate-y-1">
+                                        <PhoneCall className="w-5 h-5" />
                                         +91 95440 33344
                                     </a>
-                                    <Link to="/locations/kochi" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
-                                        View Kochi Office <ArrowRight className="w-5 h-5" />
-                                    </Link>
+                                    <a href="https://share.google/iiiTbLAUtbnH0CUJt" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-6 py-4 rounded-xl transition-all transform hover:-translate-y-1">
+                                        <MapPin className="w-5 h-5" />
+                                        View Map
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -150,8 +166,6 @@ export default function Locations() {
 
                     {/* Dubai */}
                     <div className="relative rounded-[40px] bg-primary text-white border-primary shadow-2xl overflow-hidden group flex flex-col lg:flex-row hover:shadow-[0_0_30px_rgba(30,77,183,0.3)] transition-all cursor-pointer transform hover:-translate-y-1">
-                        <Link to="/locations/dubai" className="absolute inset-0 z-0" aria-label="View Dubai Location Details"></Link>
-
                         <div className="w-full lg:w-1/2 p-10 md:p-16 lg:p-20 relative flex flex-col justify-center pointer-events-none">
                             <div className="absolute -top-32 -left-32 w-64 h-64 bg-accent/30 rounded-full blur-3xl pointer-events-none"></div>
                             <div className="relative z-10">
@@ -164,12 +178,12 @@ export default function Locations() {
                                         <span className="text-sm font-bold tracking-widest uppercase text-accent">Regional Support</span>
                                     </div>
                                 </div>
-                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-10">
+                                <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-6">
                                     Perfect & Clean Edge Solutions — extending our technical services and deep industry expertise entirely across the Gulf region.
                                 </p>
                                 <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
-                                    <Link to="/locations/dubai" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
-                                        View Dubai Office <ArrowRight className="w-5 h-5" />
+                                    <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
+                                        Get in Touch <ArrowRight className="w-5 h-5" />
                                     </Link>
                                 </div>
                             </div>
