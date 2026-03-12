@@ -88,7 +88,7 @@ export default function SimCardServices() {
                         </div>
                         <div className="space-y-6 lg:ml-10">
                             <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
-                                <img src="/sim_services.webp" alt="SIM Card Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                                <img src="/sim_services.webp" alt="STC, Mobily and Zain SIM card activation and recharge services in Riyadh" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                             </div>
                             <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
                                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -221,15 +221,50 @@ export default function SimCardServices() {
                     </div>
                 </section>
 
+                {/* SEO Rich Content Section */}
+                <section className="py-16 bg-background">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl space-y-16">
+                        <div>
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Instant SIM Card Activation in Riyadh</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Staying connected in a fast-paced city requires immediate access to reliable telecom networks. At Perfect Energy Solution, we provide instant SIM card activation in Riyadh for STC, Mobily, and Zain networks. Visitors, expatriates, and local residents can walk into our retail location with a valid ID or Iqama, and secure a fully activated, ready-to-use mobile line within a matter of minutes.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Our knowledgeable staff quickly guides you through the expedited registration process, ensuring full compliance with national telecom regulations. Whether you require a temporary prepaid line for a short business trip or a robust, long-term postpaid connection for continuous high-speed data access, our activation services are engineered for absolute convenience.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Corporate Mobile Fleet & Business SIM Plans</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Commercial enterprises frequently manage sprawling teams of field agents, delivery drivers, and remote executives. We specialize in provisioning corporate mobile fleet connections and bulk business SIM cards in Riyadh. By centralizing your telecommunications procurement with us, businesses benefit from unified billing structures and specialized corporate discounts.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Furthermore, we provide advanced IoT (Internet of Things) and M2M (Machine to Machine) SIM solutions critical for modern logistics, smart office devices, and telemetry systems. Our experts analyze your organizational data consumption to recommend scalable, cost-effective data plans that keep your entire workforce securely tethered to your central infrastructure.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Hassle-Free Mobile Network Portability (MNP)</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                If you are unhappy with your current carrier's signal coverage or pricing structure, changing providers shouldn't mean losing your established contact number. We specialize in facilitating seamless Mobile Number Portability (MNP) services across Riyadh. Our team handles the internal porting mechanics, moving your number smoothly between STC, Mobily, and Zain with minimal service interruption.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Additionally, we provide swift SIM replacement services for lost or damaged cards. With extensive experience in navigating carrier protocols, we rapidly recover your existing mobile identity, restoring your vital voice and data services fast, so you remain reachable when it matters most.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Internal Links */}
                 <section className="py-16">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                         <h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             {[
-                                { title: "Electronics Repair", slug: "electronics-repair", desc: "Device repair and maintenance in Riyadh." },
-                                { title: "Networking Solutions", slug: "networking-solutions", desc: "Office network setup and IT support." },
-                                { title: "Technical Support", slug: "technical-support", desc: "General technical assistance." }
+                                { title: "Laptop & Mobile Sales", slug: "laptop-mobile", desc: "Corporate device supply & repair in Riyadh." },
+                                { title: "Networking Solutions Riyadh", slug: "networking-solutions", desc: "Office network setup and IT support." },
+                                { title: "Electrical Services", slug: "electrical-services", desc: "Commercial electrical maintenance." }
                             ].map((link, idx) => (
                                 <Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group">
                                     <div>

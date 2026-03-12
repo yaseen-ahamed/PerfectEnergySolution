@@ -53,7 +53,7 @@ export default function OfficeStationery() {
                         </div>
                         <div className="space-y-6 lg:ml-10">
                             <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
-                                <img src="/office_stationery.png" alt="Office Stationery Supplies" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                                <img src="/office_stationery.png" alt="bulk office stationery and printer supply services in Riyadh" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,42 @@ export default function OfficeStationery() {
                     </div>
                 </section>
 
-                <section className="py-16"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{[{ title: "Laptop & Mobile", slug: "laptop-mobile", desc: "Device sales and repair." }, { title: "Networking Solutions", slug: "networking-solutions", desc: "Office network setup and IT support." }, { title: "CCTV & Security", slug: "cctv-installation", desc: "Security solutions." }].map((link, idx) => (<Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group"><div><h3 className="font-heading font-bold text-textDark mb-1">{link.title}</h3><p className="text-sm text-gray-500">{link.desc}</p></div><ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" /></Link>))}</div></div></section>
+                {/* SEO Rich Content Section */}
+                <section className="py-16 bg-background">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl space-y-16">
+                        <div>
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Bulk Office Stationery Supply in Riyadh</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Maintaining a well-stocked workplace is essential for uninterrupted daily operations. We are a leading provider of bulk office stationery in Riyadh, catering to corporate headquarters, educational institutions, retail storefronts, and small businesses alike. We ensure you never run out of crucial daily consumables ranging from high-grade A4 printing paper to professional-grade pens, markers, and specialized writing instruments.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Our extensive catalog includes comprehensive filing and archiving systems, vital for maintaining meticulous corporate records. From heavy-duty binders and expanding folders to sleek desk organizers and desktop trays, our products are designed to help you create a structured, highly efficient, and clutter-free working environment.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Corporate Office Supply Contracts & Delivery</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Managing inventory across multiple departments can be challenging. By establishing corporate office supply contracts with Perfect Energy Solution, enterprise clients in Riyadh benefit from streamlined procurement, predictable budgeting, and priority delivery services. We manage the logistics so your administrative staff can focus on core business tasks.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                We pride ourselves on rapid fulfillment and deliver large-scale stationery orders quickly and directly to your facility, anywhere across the capital. Additionally, we excel in accommodating specialized or custom supply requests, ensuring your unique corporate branding or specific industry requirements are seamlessly met.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Quality Printer Ink & Toner Cartridges</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                A high-volume office relies heavily on reliable printing infrastructure. We supply a vast inventory of genuine and premium-compatible printer ink and toner cartridges in Riyadh. Whether your office utilizes heavy-duty laser printers for high-speed document output or precise inkjet models for vibrant graphical reports, we stock consumables for all major manufacturing brands including HP, Canon, Epson, and Brother.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Utilizing high-quality ink and toner protects your expensive printing hardware from clogs and premature failure, guaranteeing sharp, professional-grade prints on every page. Our team can analyze your printing patterns to recommend the most cost-effective, high-yield cartridges that minimize long-term operational expenses for your business.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="py-16"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{[{ title: "Laptop & Mobile Sales", slug: "laptop-mobile", desc: "Corporate device supply & repair." }, { title: "Networking Solutions Riyadh", slug: "networking-solutions", desc: "Office network & Wi-Fi setup." }, { title: "CCTV Installation Riyadh", slug: "cctv-installation", desc: "Professional security camera setups." }].map((link, idx) => (<Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group"><div><h3 className="font-heading font-bold text-textDark mb-1">{link.title}</h3><p className="text-sm text-gray-500">{link.desc}</p></div><ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" /></Link>))}</div></div></section>
                 <section className="bg-white py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Frequently Asked Questions</h2><div className="space-y-4">{faqData.map((faq, idx) => (<details key={idx} className="bg-background rounded-2xl border border-borderGrey p-6 group"><summary className="font-heading font-bold text-textDark cursor-pointer list-none flex items-center justify-between">{faq.q}<span className="text-accent text-xl group-open:rotate-45 transition-transform">+</span></summary><p className="text-gray-600 font-sans mt-4 leading-relaxed">{faq.a}</p></details>))}</div></div></section>
                 <section className="pb-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"><div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div><div className="relative z-10 max-w-2xl mx-auto"><h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Enquire for Bulk Orders</h2><p className="text-gray-300 font-sans text-lg mb-8">Contact us today to stock up your workspace with our premium stationery supplies.</p><div className="flex flex-col sm:flex-row gap-4 justify-center"><a href="tel:+966556704985" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1"><PhoneCall className="w-5 h-5" /> Call Now</a><a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1"><WhatsAppIcon className="w-5 h-5" /> WhatsApp Us</a></div></div></div></div></section>
             </div>

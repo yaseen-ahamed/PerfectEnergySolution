@@ -39,7 +39,7 @@ export default function LaptopMobile() {
                         </div>
                         <div className="space-y-6 lg:ml-10">
                             <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
-                                <img src="/laptop_mobile.png" alt="Laptop & Mobile Solutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                                <img src="/laptop_mobile.png" alt="corporate laptop and smartphone sales and repair services in Riyadh" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                             </div>
                             <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
                                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -61,8 +61,44 @@ export default function LaptopMobile() {
                         </div>
                     </div>
                 </section>
+
+                {/* SEO Rich Content Section */}
+                <section className="py-16 bg-background">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl space-y-16">
+                        <div>
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Professional Laptop Repair Services in Riyadh</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                A malfunctioning computer can bring your work to a complete halt. Our technical center provides fast, reliable laptop repair in Riyadh for all major brands, including Apple, Dell, HP, Lenovo, and Asus. Our certified technicians handle everything from cracked screen replacements and sluggish hard drive performance to complex motherboard micro-soldering and liquid damage recovery.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Beyond basic repairs, we optimize aging devices. By performing targeted hardware upgrades, such as installing high-speed SSDs and expanding RAM capacity, we significantly extend the lifecycle of your existing computers. We ensure every repaired device is thoroughly stress-tested before being returned, guaranteeing optimal and sustained performance.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Corporate Device Supply & Hardware Sales</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Equipping a modern workforce requires dependable technology. Perfect Energy Solution serves as a trusted partner for corporate device supply in Riyadh. We source and supply bulk orders of high-quality, enterprise-grade laptops, smartphones, and tablets tailored to meet the specific security and performance requirements of commercial organizations.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                We also carry a comprehensive inventory of essential peripherals and mobile accessories, ensuring your team has protective cases, ergonomic keyboards, fast-charging cables, and reliable power banks to remain productive whether they are operating in the office or remotely in the field.
+                            </p>
+                        </div>
+
+                        <div className="pt-8 border-t border-borderGrey">
+                            <h2 className="text-3xl font-heading font-extrabold text-textDark mb-6">Expert Mobile Phone Troubleshooting</h2>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed mb-4">
+                                Smartphones are indispensable business tools. Whether facing rapid battery drain, unresponsive touchscreens, or critical software boot loops, our mobile phone troubleshooting experts in Riyadh deliver precise diagnostics. We use specialized, manufacturer-approved replacement parts to ensure that screen and battery replacements restore your device to factory-standard condition.
+                            </p>
+                            <p className="text-lg text-gray-600 font-sans leading-relaxed">
+                                Recognizing the sensitive nature of corporate connectivity, our repair processes prioritize stringent data privacy protocols. We operate with complete transparency, and our dedicated data recovery specialists can often retrieve critical contacts, documents, and media even from severely damaged smartphones that refuse to power on.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Why Choose Us?</h2><div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">{[{ num: "01", title: "Expert Techs", desc: "Certified professionals with years of experience." }, { num: "02", title: "Quality Parts", desc: "We use high-grade replacement parts for all repairs." }, { num: "03", title: "Data Privacy", desc: "Your personal data remains completely secure." }, { num: "04", title: "Warranty", desc: "Reliable warranty on our services and products." }].map((step, idx) => (<div key={idx} className="bg-white rounded-3xl p-6 border border-borderGrey text-center group hover:shadow-md transition-all"><div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mx-auto mb-4 font-heading font-bold text-lg group-hover:scale-110 transition-transform">{step.num}</div><h3 className="text-lg font-heading font-bold text-textDark mb-2">{step.title}</h3><p className="text-gray-600 font-sans text-sm leading-relaxed">{step.desc}</p></div>))}</div></div></section>
-                <section className="bg-white py-16"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{[{ title: "Office Stationery", slug: "office-stationery", desc: "Essential office supplies." }, { title: "Networking Solutions", slug: "networking-solutions", desc: "Office network setup and IT support." }, { title: "CCTV & Security", slug: "cctv-installation", desc: "Security solutions." }].map((link, idx) => (<Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group"><div><h3 className="font-heading font-bold text-textDark mb-1">{link.title}</h3><p className="text-sm text-gray-500">{link.desc}</p></div><ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" /></Link>))}</div></div></section>
+                <section className="bg-white py-16"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><h2 className="text-2xl font-heading font-bold text-textDark mb-8 text-center">Explore Related Services</h2><div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{[{ title: "Bulk Office Stationery Riyadh", slug: "office-stationery", desc: "Essential office supplies." }, { title: "Networking Solutions Riyadh", slug: "networking-solutions", desc: "Office network & Wi-Fi setup." }, { title: "CCTV Installation Riyadh", slug: "cctv-installation", desc: "Professional security camera setups." }].map((link, idx) => (<Link key={idx} to={`/services/${link.slug}`} className="flex items-center justify-between p-6 bg-background rounded-2xl border border-borderGrey hover:border-accent/30 transition-colors group"><div><h3 className="font-heading font-bold text-textDark mb-1">{link.title}</h3><p className="text-sm text-gray-500">{link.desc}</p></div><ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" /></Link>))}</div></div></section>
                 <section className="py-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl"><h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-12 text-center">Frequently Asked Questions</h2><div className="space-y-4">{faqData.map((faq, idx) => (<details key={idx} className="bg-white rounded-2xl border border-borderGrey p-6 group"><summary className="font-heading font-bold text-textDark cursor-pointer list-none flex items-center justify-between">{faq.q}<span className="text-accent text-xl group-open:rotate-45 transition-transform">+</span></summary><p className="text-gray-600 font-sans mt-4 leading-relaxed">{faq.a}</p></details>))}</div></div></section>
                 <section className="pb-20"><div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"><div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden"><div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div><div className="relative z-10 max-w-2xl mx-auto"><h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Fix Your Device Today</h2><p className="text-gray-300 font-sans text-lg mb-8">Reach out for prompt and professional repair or sales inquiries.</p><div className="flex flex-col sm:flex-row gap-4 justify-center"><a href="tel:+966556704985" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1"><PhoneCall className="w-5 h-5" /> Call Now</a><a href="https://wa.me/966566149219" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1"><WhatsAppIcon className="w-5 h-5" /> WhatsApp Us</a></div></div></div></div></section>
             </div>

@@ -18,7 +18,7 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-400 font-sans text-sm leading-relaxed mb-6">
-                            Professional electronics, networking, security, and technical services for homes and businesses.
+                            Professional electronics, networking, security, and technical services for homes and businesses in Riyadh, Saudi Arabia.
                         </p>
                     </div>
 
@@ -71,7 +71,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" />
                                 <div className="flex flex-col">
-                                    <span>Riyadh</span>
+                                    <span>Riyadh, Saudi Arabia</span>
                                     <a href="https://maps.app.goo.gl/mJXH2CsENMQ7byXd8" target="_blank" rel="noreferrer" className="text-accent hover:text-white transition-colors mt-1 font-medium text-xs uppercase tracking-wider">
                                         View on Google Maps
                                     </a>
