@@ -56,7 +56,7 @@ export default function Contact() {
     return (
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
-                title="Contact Perfect Energy Solution Riyadh | Technical Services Saudi Arabia"
+                title="Contact Perfect Energy Solution Riyadh | Technical Services Riyadh"
                 description="Contact Perfect Energy Solution in Riyadh for electronics repair, CCTV installation, networking, electrical services, and technical support. Call, WhatsApp, or fill out our contact form."
                 canonicalUrl="/contact"
                 jsonLdSchema={{
@@ -195,7 +195,7 @@ export default function Contact() {
                         <div className="p-6 md:p-8 bg-background border-b border-borderGrey flex flex-col sm:flex-row items-center justify-between gap-4">
                             <div>
                                 <h3 className="font-heading font-bold text-xl text-textDark">Our Location</h3>
-                                <p className="text-gray-600 font-sans text-sm mt-1">Riyadh, Saudi Arabia</p>
+                                <p className="text-gray-600 font-sans text-sm mt-1">Riyadh, Riyadh</p>
                             </div>
                             <a
                                 href="https://maps.app.goo.gl/mJXH2CsENMQ7byXd8"

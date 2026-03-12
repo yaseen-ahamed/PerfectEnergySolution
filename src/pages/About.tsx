@@ -23,7 +23,7 @@ export default function About() {
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
                 title="About Perfect Energy Solution | Technical Services Company in Riyadh Since 2010"
-                description="Perfect Energy Solution is a Riyadh-based technical services company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and SIM card services across Saudi Arabia."
+                description="Perfect Energy Solution is a Riyadh-based technical services company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and SIM card services across Riyadh."
                 canonicalUrl="/about"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default function About() {
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Perfect Energy Solution</span> — Riyadh
                     </h1>
                     <p className="text-lg text-textDark/70 font-sans leading-relaxed">
-                        Perfect Energy Solution is a professional technical services company based in Riyadh, Saudi Arabia, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, SIM card services, and general technical support for residential and commercial clients since 2010.
+                        Perfect Energy Solution is a professional technical services company based in Riyadh, Riyadh, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, SIM card services, and general technical support for residential and commercial clients since 2010.
                     </p>
                 </div>
             </section>
@@ -65,7 +65,7 @@ export default function About() {
                             <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6">Our Journey in Riyadh</h2>
                             <div className="space-y-4 text-textDark/70 font-sans leading-relaxed text-lg">
                                 <p>
-                                    Perfect Energy Solution was established in 2010 in Riyadh, Saudi Arabia, to provide reliable and efficient electronics and technical services to individuals and businesses across the Kingdom.
+                                    Perfect Energy Solution was established in 2010 in Riyadh, Riyadh, to provide reliable and efficient electronics and technical services to individuals and businesses across the Kingdom.
                                 </p>
                                 <p>
                                     With growing demand for professional technical support in networking, security systems, and electrical infrastructure, the company expanded its services to provide comprehensive solutions.
@@ -155,7 +155,7 @@ export default function About() {
                             ))}
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6">Our Technical Expertise in Saudi Arabia</h2>
+                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6">Our Technical Expertise in Riyadh</h2>
                             <p className="text-textDark/70 font-sans leading-relaxed mb-6">Our team consists of technicians experienced in:</p>
                             <ul className="space-y-3">
                                 {expertise.map((item, idx) => (

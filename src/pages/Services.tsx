@@ -118,7 +118,7 @@ export default function Services() {
     return (
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
-                title="Technical Services in Riyadh Saudi Arabia | Electronics, CCTV, Networking, Electrical"
+                title="Technical Services in Riyadh Riyadh | Electronics, CCTV, Networking, Electrical"
                 description="Explore our full range of professional technical services in Riyadh including electronics repair, networking solutions, CCTV installation, electrical services, technical support, and SIM card services."
                 canonicalUrl="/services"
                 jsonLdSchema={{
@@ -148,7 +148,7 @@ export default function Services() {
                         Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Services</span> in Riyadh
                     </h1>
                     <p className="text-xl text-textDark/70 font-sans max-w-2xl leading-relaxed">
-                        Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Saudi Arabia — designed to support homes, offices, and commercial facilities.
+                        Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Riyadh — designed to support homes, offices, and commercial facilities.
                     </p>
                 </div>
 

@@ -71,7 +71,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" />
                                 <div className="flex flex-col">
-                                    <span>Saudi Arabia</span>
+                                    <span>Riyadh</span>
                                     <a href="https://maps.app.goo.gl/mJXH2CsENMQ7byXd8" target="_blank" rel="noreferrer" className="text-accent hover:text-white transition-colors mt-1 font-medium text-xs uppercase tracking-wider">
                                         View on Google Maps
                                     </a>

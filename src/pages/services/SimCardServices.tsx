@@ -34,7 +34,7 @@ export default function SimCardServices() {
                         "@context": "https://schema.org",
                         "@type": "Service",
                         "serviceType": "SIM Card Services",
-                        "provider": { "@type": "LocalBusiness", "name": "Perfect Energy Solution", "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "Saudi Arabia" } },
+                        "provider": { "@type": "LocalBusiness", "name": "Perfect Energy Solution", "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "Riyadh" } },
                         "areaServed": { "@type": "City", "name": "Riyadh" }
                     },
                     {

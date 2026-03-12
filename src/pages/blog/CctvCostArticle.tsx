@@ -5,7 +5,7 @@ import { PhoneCall, MapPin, Camera, CheckCircle2, ArrowRight } from 'lucide-reac
 
 export default function CctvCostArticle() {
     const faqData = [
-        { q: "What is the average cost of CCTV installation in Saudi Arabia?", a: "The average cost ranges from SAR 1,500 to SAR 15,000+ depending on the number of cameras, system quality, and installation complexity. A basic 4-camera analog system starts around SAR 1,500, while a premium 8-camera IP system can cost SAR 10,000 or more." },
+        { q: "What is the average cost of CCTV installation in Riyadh?", a: "The average cost ranges from SAR 1,500 to SAR 15,000+ depending on the number of cameras, system quality, and installation complexity. A basic 4-camera analog system starts around SAR 1,500, while a premium 8-camera IP system can cost SAR 10,000 or more." },
         { q: "Does Perfect Energy Solution offer free assessments?", a: "Yes. We provide free on-site security assessments across Riyadh. Our technician will visit your property, evaluate your security needs, and provide a detailed quotation at no cost." },
         { q: "Is it cheaper to install CCTV yourself?", a: "While DIY kits exist, professional installation ensures optimal camera placement, proper wiring, reliable recording setup, and remote monitoring — which are critical for effective security. Improper installation can leave blind spots and reduce system reliability." },
         { q: "How long does CCTV installation take?", a: "A typical residential installation (4-8 cameras) takes 4-8 hours. Larger commercial projects may take 1-3 days depending on facility size and system complexity." },
@@ -16,12 +16,12 @@ export default function CctvCostArticle() {
     return (
         <>
             <SEO
-                title="CCTV Installation Cost in Saudi Arabia 2024 | Price Guide | Perfect Energy Solution"
-                description="How much does CCTV installation cost in Saudi Arabia? Complete 2024 price guide covering camera systems, installation fees, and factors that affect your total cost. Get a free quote from Perfect Energy Solution."
+                title="CCTV Installation Cost in Riyadh 2024 | Price Guide | Perfect Energy Solution"
+                description="How much does CCTV installation cost in Riyadh? Complete 2024 price guide covering camera systems, installation fees, and factors that affect your total cost. Get a free quote from Perfect Energy Solution."
                 canonicalUrl="/insights/cctv-installation-cost"
                 jsonLdSchema={[faqSchema, {
                     "@context": "https://schema.org", "@type": "Article",
-                    "headline": "How Much Does CCTV Installation Cost in Saudi Arabia? (2024 Guide)",
+                    "headline": "How Much Does CCTV Installation Cost in Riyadh? (2024 Guide)",
                     "author": { "@type": "Organization", "name": "Perfect Energy Solution" },
                     "publisher": { "@type": "Organization", "name": "Perfect Energy Solution", "logo": { "@type": "ImageObject", "url": "https://perfectenergysolution.com/Perfect Energy Solution Logo.webp" } },
                     "datePublished": "2024-08-10", "dateModified": "2024-08-10",
@@ -51,23 +51,23 @@ export default function CctvCostArticle() {
                         <Camera className="w-4 h-4" /> Security
                     </div>
                     <h1 className="text-3xl md:text-5xl font-heading font-extrabold text-textDark leading-tight mb-4">
-                        How Much Does CCTV Installation Cost in Saudi Arabia?
+                        How Much Does CCTV Installation Cost in Riyadh?
                     </h1>
                     <p className="text-gray-500 font-sans text-sm mb-8">Published August 10, 2024 · 8 min read</p>
                     <div className="rounded-3xl overflow-hidden shadow-xl mb-12">
-                        <img src="/blog-cctv-cost.png" alt="Professional CCTV camera installation in a modern building in Saudi Arabia" className="w-full h-auto object-cover max-h-[480px]" loading="lazy" />
+                        <img src="/blog-cctv-cost.png" alt="Professional CCTV camera installation in a modern building in Riyadh" className="w-full h-auto object-cover max-h-[480px]" loading="lazy" />
                     </div>
 
                     {/* Article Body */}
                     <article className="prose max-w-none font-sans text-textDark/85 leading-relaxed">
                         <p className="text-lg leading-relaxed mb-6">
-                            Security is a top priority for homeowners and businesses across Saudi Arabia. Whether you're protecting a residential villa in Riyadh, a retail store, or a large commercial facility, CCTV surveillance is one of the most effective deterrents against theft, vandalism, and unauthorized access. But one of the first questions everyone asks is: <strong>how much does CCTV installation actually cost?</strong>
+                            Security is a top priority for homeowners and businesses across Riyadh. Whether you're protecting a residential villa in Riyadh, a retail store, or a large commercial facility, CCTV surveillance is one of the most effective deterrents against theft, vandalism, and unauthorized access. But one of the first questions everyone asks is: <strong>how much does CCTV installation actually cost?</strong>
                         </p>
                         <p className="text-lg leading-relaxed mb-8">
-                            In this comprehensive guide, we break down the real costs of CCTV installation in Saudi Arabia for 2024, covering everything from basic home setups to enterprise-grade surveillance systems.
+                            In this comprehensive guide, we break down the real costs of CCTV installation in Riyadh for 2024, covering everything from basic home setups to enterprise-grade surveillance systems.
                         </p>
 
-                        <h2 className="text-2xl md:text-3xl font-heading font-bold text-textDark mt-12 mb-6">Average CCTV Installation Costs in Saudi Arabia</h2>
+                        <h2 className="text-2xl md:text-3xl font-heading font-bold text-textDark mt-12 mb-6">Average CCTV Installation Costs in Riyadh</h2>
                         <p className="mb-6">The total cost of a CCTV system depends on the type of cameras, recording equipment, installation complexity, and any additional features such as remote monitoring. Here's a general breakdown:</p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -126,7 +126,7 @@ export default function CctvCostArticle() {
                         </ul>
 
                         <h2 className="text-2xl md:text-3xl font-heading font-bold text-textDark mt-12 mb-6">Why Choose Perfect Energy Solution for CCTV Installation?</h2>
-                        <p className="mb-6">With over 15 years of experience installing security systems across Riyadh and Saudi Arabia, Perfect Energy Solution delivers:</p>
+                        <p className="mb-6">With over 15 years of experience installing security systems across Riyadh and Riyadh, Perfect Energy Solution delivers:</p>
                         <div className="bg-white rounded-3xl p-8 border border-borderGrey shadow-sm mb-8">
                             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[

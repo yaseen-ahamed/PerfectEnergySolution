@@ -23,7 +23,7 @@ export default function RiyadhLocation() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-6"><MapPin className="w-4 h-4" /> Primary Headquarters</div>
-                            <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-textDark leading-tight mb-6">Technical Services in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh, Saudi Arabia</span></h1>
+                            <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-textDark leading-tight mb-6">Technical Services in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh, Riyadh</span></h1>
                             <p className="text-lg text-textDark/70 font-sans leading-relaxed mb-4">Perfect Energy Solution's Riyadh office is our primary headquarters and main service center, delivering professional electronics repair, networking solutions, CCTV installation, electrical services, and SIM card services across all major districts in the Saudi capital.</p>
                             <p className="text-base text-gray-500 font-sans leading-relaxed mb-8">With over 15 years of experience serving Riyadh's residential customers, small businesses, offices, and commercial facilities, we have built a reputation for reliability, technical expertise, and excellent customer service throughout the Kingdom.</p>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -32,7 +32,7 @@ export default function RiyadhLocation() {
                             </div>
                         </div>
                         <div className="rounded-3xl overflow-hidden shadow-2xl">
-                            <img src="/Perfect Energy Solution RIyadh.webp" alt="Perfect Energy Solution office in Riyadh Saudi Arabia" loading="lazy" className="w-full h-full object-cover min-h-[350px]" />
+                            <img src="/Perfect Energy Solution RIyadh.webp" alt="Perfect Energy Solution office in Riyadh Riyadh" loading="lazy" className="w-full h-full object-cover min-h-[350px]" />
                         </div>
                     </div>
                 </section>

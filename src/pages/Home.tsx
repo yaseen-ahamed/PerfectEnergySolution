@@ -134,8 +134,8 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
-                title="Technical Services Company in Riyadh Saudi Arabia | Perfect Energy Solution"
-                description="Perfect Energy Solution — Riyadh's leading provider of electronics repair, CCTV installation, networking solutions, electrical services, SIM card services, and technical support for homes and businesses in Saudi Arabia."
+                title="Technical Services Company in Riyadh Riyadh | Perfect Energy Solution"
+                description="Perfect Energy Solution — Riyadh's leading provider of electronics repair, CCTV installation, networking solutions, electrical services, SIM card services, and technical support for homes and businesses in Riyadh."
                 canonicalUrl="/"
                 jsonLdSchema={[
                     {
@@ -152,7 +152,7 @@ export default function Home() {
                         "address": {
                             "@type": "PostalAddress",
                             "addressLocality": "Riyadh",
-                            "addressCountry": "Saudi Arabia"
+                            "addressCountry": "Riyadh"
                         }
                     }
                 ]}
@@ -293,7 +293,7 @@ export default function Home() {
                         </div>
                         <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-4">Professional Technical Services in Riyadh</h2>
                         <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed">
-                            Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Saudi Arabia — from electronics repair and CCTV installation to networking, electrical work, and SIM card services.
+                            Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Riyadh — from electronics repair and CCTV installation to networking, electrical work, and SIM card services.
                         </p>
                     </div>
 
@@ -365,7 +365,7 @@ export default function Home() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6 leading-tight">Who We Serve in Riyadh & Saudi Arabia</h2>
+                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6 leading-tight">Who We Serve in Riyadh & Riyadh</h2>
                             <p className="text-lg text-gray-500 font-sans leading-relaxed mb-8">
                                 Our technical services support a wide range of residential and commercial clients across Riyadh and the Kingdom:
                             </p>
@@ -380,7 +380,7 @@ export default function Home() {
                         </div>
                         <div className="bg-primary rounded-[2.5rem] p-12 text-white relative flex flex-col justify-center min-h-[350px] shadow-lg bento-card-hover group overflow-hidden border border-borderGrey/20">
                             <div className="absolute inset-0 z-0 mix-blend-luminosity opacity-40 group-hover:opacity-60 transition-opacity duration-1000">
-                                <img src="/saudi_flag_abstract.png" alt="Saudi Arabia Abstract Background" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
+                                <img src="/saudi_flag_abstract.png" alt="Riyadh Abstract Background" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
                                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/30 to-transparent"></div>
                             </div>
@@ -432,7 +432,7 @@ export default function Home() {
                     <div className="text-center mb-14">
                         <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-4">Our Service Locations</h2>
                         <p className="text-lg text-gray-500 font-sans max-w-2xl mx-auto leading-relaxed">
-                            Perfect Energy Solution primarily serves customers in Saudi Arabia while also supporting clients connected to other regional markets.
+                            Perfect Energy Solution primarily serves customers in Riyadh while also supporting clients connected to other regional markets.
                         </p>
                     </div>
 
@@ -443,7 +443,7 @@ export default function Home() {
                                 <div className="w-12 h-12 bg-white/10 rounded-xl mb-4 flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-sm">
                                     <MapPin className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                                 </div>
-                                <h3 className="text-2xl font-heading font-bold text-white mb-2">Saudi Arabia</h3>
+                                <h3 className="text-2xl font-heading font-bold text-white mb-2">Riyadh</h3>
                                 <span className="text-accent text-xs font-bold tracking-wider uppercase mb-3 block">Primary Market</span>
                                 <p className="text-gray-300 font-sans leading-relaxed text-sm">Our headquarters and primary service area, covering Riyadh and major cities.</p>
                             </div>
@@ -486,7 +486,7 @@ export default function Home() {
             {/* ===== SECTION 6.5 — TESTIMONIALS ===== */}
             <TestimonialsSection
                 title="What Our Customers Say"
-                description="Read why individuals and businesses trust Perfect Energy Solutions with their technical needs."
+                description="Read why individuals and businesses trust Perfect Energy Solution with their technical needs."
                 testimonials={testimonialsData}
                 reviewLink="https://share.google/vvfT2sZrydAMQtyx4"
             />

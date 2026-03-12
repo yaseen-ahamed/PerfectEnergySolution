@@ -6,7 +6,7 @@ export default function BlogIndex() {
     const posts = [
         {
             id: "cctv-installation-cost",
-            title: "How much does CCTV installation cost in Saudi Arabia?",
+            title: "How much does CCTV installation cost in Riyadh?",
             excerpt: "A complete guide to understanding the costs involved in setting up professional security cameras for your home or business.",
             date: "August 10, 2024",
             category: "Security",

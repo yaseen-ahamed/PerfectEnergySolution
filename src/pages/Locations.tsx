@@ -9,7 +9,7 @@ export default function Locations() {
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
                 title="Service Locations | Perfect Energy Solution Riyadh, Dubai, Kochi"
-                description="Perfect Energy Solution operates from Riyadh (headquarters), Dubai (UAE affiliate), and Kochi (regional support). Professional technical services across Saudi Arabia and the Gulf region."
+                description="Perfect Energy Solution operates from Riyadh (headquarters), Dubai (UAE affiliate), and Kochi (regional support). Professional technical services across Riyadh and the Gulf region."
                 canonicalUrl="/locations"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -38,14 +38,14 @@ export default function Locations() {
                         Our Offices in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh, Dubai & Kochi</span>
                     </h1>
                     <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed mb-0">
-                        Perfect Energy Solution provides professional technical services across Saudi Arabia, UAE, and India from our three strategic office locations.
+                        Perfect Energy Solution provides professional technical services across Riyadh, UAE, and India from our three strategic office locations.
                     </p>
                 </div>
 
                 {/* Locations List */}
                 <div className="flex flex-col mb-16 gap-12">
 
-                    {/* Saudi Arabia - Primary */}
+                    {/* Riyadh - Primary */}
                     <div className="relative rounded-[40px] bg-primary text-white border-primary shadow-2xl overflow-hidden group flex flex-col lg:flex-row hover:shadow-[0_0_30px_rgba(30,77,183,0.3)] transition-all cursor-pointer transform hover:-translate-y-1">
                         <div className="w-full lg:w-1/2 p-10 md:p-16 lg:p-20 relative flex flex-col justify-center pointer-events-none">
                             <div className="absolute -top-32 -right-32 w-64 h-64 bg-accent/30 rounded-full blur-3xl pointer-events-none"></div>
@@ -55,7 +55,7 @@ export default function Locations() {
                                         <MapPin className="w-8 h-8" />
                                     </div>
                                     <div>
-                                        <h3 className="text-4xl md:text-5xl font-heading font-bold text-white mb-2 group-hover:text-accent transition-colors">Saudi Arabia</h3>
+                                        <h3 className="text-4xl md:text-5xl font-heading font-bold text-white mb-2 group-hover:text-accent transition-colors">Riyadh</h3>
                                         <span className="text-sm font-bold tracking-widest uppercase text-accent">Primary Market</span>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ export default function Locations() {
                                         {
                                             id: 1,
                                             title: "Riyadh Headquarters",
-                                            description: "Our primary hub in Saudi Arabia.",
+                                            description: "Our primary hub in Riyadh.",
                                             imageSrc: "/Perfect Energy Solution RIyadh.webp",
                                         },
                                         {
