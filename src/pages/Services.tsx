@@ -57,7 +57,7 @@ export default function Services() {
             accent: "text-accent",
             accentBg: "bg-accent/10",
             slug: "networking-solutions",
-            image: "/networking_solutions_zoomed.png"
+            image: "/networking_solutions_zoomed.webp"
         },
         {
             id: "cctv",
@@ -75,7 +75,7 @@ export default function Services() {
             accent: "text-amber-500",
             accentBg: "bg-amber-500/10",
             slug: "cctv-installation",
-            image: "/cctv_security_zoomed.png"
+            image: "/cctv_security_zoomed.webp"
         },
         {
             id: "electrical",
@@ -93,7 +93,7 @@ export default function Services() {
             accent: "text-emerald-500",
             accentBg: "bg-emerald-500/10",
             slug: "electrical-services",
-            image: "/electrical_services_zoomed.png"
+            image: "/electrical_services_zoomed.webp"
         },
         {
             id: "simcard",
@@ -111,7 +111,7 @@ export default function Services() {
             accent: "text-purple-500",
             accentBg: "bg-purple-500/10",
             slug: "sim-card-services",
-            image: "/sim_services_zoomed.png"
+            image: "/sim_services_zoomed.webp"
         }
     ];
 

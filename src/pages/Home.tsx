@@ -68,28 +68,28 @@ export default function Home() {
             title: "Networking & Software Solutions",
             desc: "Professional network setup and software support for offices and homes.",
             slug: "networking-solutions",
-            image: "/networking_solutions_zoomed.png"
+            image: "/networking_solutions_zoomed.webp"
         },
         {
             icon: Camera,
             title: "CCTV & Security Systems",
             desc: "Installation and maintenance of surveillance systems to protect your property.",
             slug: "cctv-installation",
-            image: "/cctv_security_zoomed.png"
+            image: "/cctv_security_zoomed.webp"
         },
         {
             icon: Zap,
             title: "Electrical Services",
             desc: "Professional electrical installation and maintenance.",
             slug: "electrical-services",
-            image: "/electrical_services_zoomed.png"
+            image: "/electrical_services_zoomed.webp"
         },
         {
             icon: Smartphone,
             title: "SIM Card Services",
             desc: "SIM card activation, purchasing, mobile recharge, and data plans from all carriers.",
             slug: "sim-card-services",
-            image: "/sim_services_zoomed.png"
+            image: "/sim_services_zoomed.webp"
         }
     ];
 
