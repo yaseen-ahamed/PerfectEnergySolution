@@ -126,7 +126,7 @@ export default function CctvCostArticle() {
                         </ul>
 
                         <h2 className="text-2xl md:text-3xl font-heading font-bold text-textDark mt-12 mb-6">Why Choose Perfect Energy Solution for CCTV Installation?</h2>
-                        <p className="mb-6">With over 15 years of experience installing security systems across Riyadh and Riyadh, Perfect Energy Solution delivers:</p>
+                        <p className="mb-6">With over 15 years of experience installing security systems across Riyadh, Perfect Energy Solution delivers:</p>
                         <div className="bg-white rounded-3xl p-8 border border-borderGrey shadow-sm mb-8">
                             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {[

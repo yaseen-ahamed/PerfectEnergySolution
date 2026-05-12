@@ -33,7 +33,7 @@ export default function ElectricalServices() {
                         </div>
                         <div className="space-y-6 lg:ml-10">
                             <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
-                                <img src="/electrical_services.webp" alt="Electrical Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                                <img src="/electrical_services_zoomed.png" alt="Electrical Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                             </div>
                             <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
                                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>

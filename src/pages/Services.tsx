@@ -57,7 +57,7 @@ export default function Services() {
             accent: "text-accent",
             accentBg: "bg-accent/10",
             slug: "networking-solutions",
-            image: "/networking_solutions.webp"
+            image: "/networking_solutions_zoomed.png"
         },
         {
             id: "cctv",
@@ -75,7 +75,7 @@ export default function Services() {
             accent: "text-amber-500",
             accentBg: "bg-amber-500/10",
             slug: "cctv-installation",
-            image: "/cctv_security.webp"
+            image: "/cctv_security_zoomed.png"
         },
         {
             id: "electrical",
@@ -93,7 +93,7 @@ export default function Services() {
             accent: "text-emerald-500",
             accentBg: "bg-emerald-500/10",
             slug: "electrical-services",
-            image: "/electrical_services.webp"
+            image: "/electrical_services_zoomed.png"
         },
         {
             id: "simcard",
@@ -111,15 +111,15 @@ export default function Services() {
             accent: "text-purple-500",
             accentBg: "bg-purple-500/10",
             slug: "sim-card-services",
-            image: "/sim_services.webp"
+            image: "/sim_services_zoomed.png"
         }
     ];
 
     return (
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
-                title="Technical Services in Riyadh Riyadh | Electronics, CCTV, Networking, Electrical"
-                description="Explore our full range of professional technical services in Riyadh including electronics repair, networking solutions, CCTV installation, electrical services, technical support, and SIM card services."
+                title="Tech Solutions in Riyadh | Electronics, CCTV, Networking, Electrical"
+                description="Explore our full range of professional tech solutions in Riyadh including electronics repair, networking solutions, CCTV installation, electrical services, technical support, and SIM card services."
                 canonicalUrl="/services"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -148,7 +148,7 @@ export default function Services() {
                         Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Services</span> in Riyadh
                     </h1>
                     <p className="text-xl text-textDark/70 font-sans max-w-2xl leading-relaxed">
-                        Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Riyadh — designed to support homes, offices, and commercial facilities.
+                        Perfect Energy Solution offers a comprehensive range of professional tech solutions in Riyadh — designed to support homes, offices, and commercial facilities.
                     </p>
                 </div>
 

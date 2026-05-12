@@ -34,7 +34,7 @@ export default function SimCardServices() {
                         "@context": "https://schema.org",
                         "@type": "Service",
                         "serviceType": "SIM Card Services",
-                        "provider": { "@type": "LocalBusiness", "name": "Perfect Energy Solution", "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "Riyadh" } },
+                        "provider": { "@type": "LocalBusiness", "name": "Perfect Energy Solution", "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA" } },
                         "areaServed": { "@type": "City", "name": "Riyadh" }
                     },
                     {
@@ -88,7 +88,7 @@ export default function SimCardServices() {
                         </div>
                         <div className="space-y-6 lg:ml-10">
                             <div className="w-full aspect-square bg-gray-50 rounded-[2.5rem] border border-borderGrey overflow-hidden shadow-sm relative group">
-                                <img src="/sim_services.webp" alt="SIM Card Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                                <img src="/sim_services_zoomed.png" alt="SIM Card Services" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
                             </div>
                             <div className="bg-primary rounded-[2rem] p-8 text-white relative overflow-hidden shadow-sm">
                                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl pointer-events-none"></div>

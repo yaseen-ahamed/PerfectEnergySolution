@@ -33,7 +33,7 @@ export function SEO({
         "areaServed": "Riyadh",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Technical Services",
+            "name": "Tech Solutions",
             "itemListElement": [
                 { "@type": "Service", "name": "Laptop & Mobile Sales and Repair" },
                 { "@type": "Service", "name": "Office Stationery & Supplies" },

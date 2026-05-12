@@ -68,28 +68,28 @@ export default function Home() {
             title: "Networking & Software Solutions",
             desc: "Professional network setup and software support for offices and homes.",
             slug: "networking-solutions",
-            image: "/networking_solutions.webp"
+            image: "/networking_solutions_zoomed.png"
         },
         {
             icon: Camera,
             title: "CCTV & Security Systems",
             desc: "Installation and maintenance of surveillance systems to protect your property.",
             slug: "cctv-installation",
-            image: "/cctv_security.webp"
+            image: "/cctv_security_zoomed.png"
         },
         {
             icon: Zap,
             title: "Electrical Services",
             desc: "Professional electrical installation and maintenance.",
             slug: "electrical-services",
-            image: "/electrical_services.webp"
+            image: "/electrical_services_zoomed.png"
         },
         {
             icon: Smartphone,
             title: "SIM Card Services",
             desc: "SIM card activation, purchasing, mobile recharge, and data plans from all carriers.",
             slug: "sim-card-services",
-            image: "/sim_services.webp"
+            image: "/sim_services_zoomed.png"
         }
     ];
 
@@ -134,7 +134,7 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
-                title="Technical Services Company in Riyadh Riyadh | Perfect Energy Solution"
+                title="Tech Solutions Company in Riyadh | Perfect Energy Solution"
                 description="Perfect Energy Solution — Riyadh's leading provider of electronics repair, CCTV installation, networking solutions, electrical services, SIM card services, and technical support for homes and businesses in Riyadh."
                 canonicalUrl="/"
                 jsonLdSchema={[
@@ -231,7 +231,7 @@ export default function Home() {
                             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-extrabold text-primary leading-[1.1] mb-6 tracking-tight">
                                 <span className="text-textDark block">Perfect Energy Solution</span>
                                 <span className="bg-gradient-to-r from-accent to-emerald-500 bg-clip-text text-transparent relative inline-block pb-2">
-                                    Technical Services
+                                    Tech Solutions
                                     <div className="absolute bottom-1 right-0 left-0 h-2 bg-gradient-to-r from-accent/30 to-emerald-500/30 rounded-full blur-[2px]"></div>
                                 </span>
                             </h1>
@@ -291,9 +291,9 @@ export default function Home() {
                             <span className="w-2 h-2 rounded-full bg-accent"></span>
                             What We Do
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-4">Professional Technical Services in Riyadh</h2>
+                        <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-4">Professional Tech Solutions in Riyadh</h2>
                         <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed">
-                            Perfect Energy Solution offers a comprehensive range of professional technical services in Riyadh, Riyadh — from electronics repair and CCTV installation to networking, electrical work, and SIM card services.
+                            Perfect Energy Solution offers a comprehensive range of professional tech solutions in Riyadh — from electronics repair and CCTV installation to networking, electrical work, and SIM card services.
                         </p>
                     </div>
 
@@ -365,9 +365,9 @@ export default function Home() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6 leading-tight">Who We Serve in Riyadh & Riyadh</h2>
+                            <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6 leading-tight">Who We Serve in Riyadh</h2>
                             <p className="text-lg text-gray-500 font-sans leading-relaxed mb-8">
-                                Our technical services support a wide range of residential and commercial clients across Riyadh and the Kingdom:
+                                Our tech solutions support a wide range of residential and commercial clients across Riyadh and the Kingdom:
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 {clientTypes.map((client, idx) => (

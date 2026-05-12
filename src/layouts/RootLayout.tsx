@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TopBar from '../components/TopBar';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -15,6 +16,7 @@ export default function RootLayout() {
     return (
         <div className="flex flex-col min-h-screen bg-background">
             <ScrollToTop />
+            <TopBar />
             <Navbar />
             <main className="flex-grow">
                 <Outlet />

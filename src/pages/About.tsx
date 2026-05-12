@@ -22,8 +22,8 @@ export default function About() {
     return (
         <div className="flex flex-col min-h-screen bg-background">
             <SEO
-                title="About Perfect Energy Solution | Technical Services Company in Riyadh Since 2010"
-                description="Perfect Energy Solution is a Riyadh-based technical services company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and SIM card services across Riyadh."
+                title="About Perfect Energy Solution | Tech Solutions Company in Riyadh Since 2010"
+                description="Perfect Energy Solution is a Riyadh-based tech solutions company established in 2010. We provide electronics repair, networking, CCTV installation, electrical services, and SIM card services across Riyadh."
                 canonicalUrl="/about"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default function About() {
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Perfect Energy Solution</span> — Riyadh
                     </h1>
                     <p className="text-lg text-textDark/70 font-sans leading-relaxed">
-                        Perfect Energy Solution is a professional technical services company based in Riyadh, Riyadh, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, SIM card services, and general technical support for residential and commercial clients since 2010.
+                        Perfect Energy Solution is a professional tech solutions company based in Riyadh, offering electronics repair, networking solutions, CCTV security systems installation, electrical services, SIM card services, and general technical support for residential and commercial clients since 2010.
                     </p>
                 </div>
             </section>
@@ -65,20 +65,20 @@ export default function About() {
                             <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-textDark mb-6">Our Journey in Riyadh</h2>
                             <div className="space-y-4 text-textDark/70 font-sans leading-relaxed text-lg">
                                 <p>
-                                    Perfect Energy Solution was established in 2010 in Riyadh, Riyadh, to provide reliable and efficient electronics and technical services to individuals and businesses across the Kingdom.
+                                    Perfect Energy Solution was established in 2010 in Riyadh, to provide reliable and efficient electronics and tech solutions to individuals and businesses across the Kingdom.
                                 </p>
                                 <p>
                                     With growing demand for professional technical support in networking, security systems, and electrical infrastructure, the company expanded its services to provide comprehensive solutions.
                                 </p>
                                 <p>
-                                    Today, Perfect Energy Solution serves customers across Riyadh, Dubai, and Kochi by delivering dependable technical services with a strong focus on quality, reliability, and customer satisfaction.
+                                    Today, Perfect Energy Solution serves customers across Riyadh, Dubai, and Kochi by delivering dependable tech solutions with a strong focus on quality, reliability, and customer satisfaction.
                                 </p>
                             </div>
                         </div>
                         <div className="rounded-3xl overflow-hidden shadow-2xl relative group">
                             <img
                                 src="/Perfect Energy Solution RIyadh.webp"
-                                alt="Perfect Energy Solution Technical Services Headquarters in Riyadh"
+                                alt="Perfect Energy Solution Tech Solutions Headquarters in Riyadh"
                                 loading="lazy"
                                 className="w-full h-full object-cover min-h-[300px] group-hover:scale-105 transition-transform duration-700"
                             />
@@ -102,7 +102,7 @@ export default function About() {
                             </div>
                             <h2 className="text-2xl font-heading font-bold text-textDark mb-4">Our Mission</h2>
                             <p className="text-textDark/70 font-sans leading-relaxed text-lg">
-                                To deliver reliable and professional technical services that help homes and businesses operate efficiently and securely.
+                                To deliver reliable and professional tech solutions that help homes and businesses operate efficiently and securely.
                             </p>
                         </div>
                         <div className="bg-white rounded-3xl p-10 border border-borderGrey shadow-sm hover:shadow-md transition-all group">
@@ -176,7 +176,7 @@ export default function About() {
                     <div className="bg-primary rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
                         <div className="relative z-10 max-w-2xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Need technical services in Riyadh?</h2>
+                            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Need tech solutions in Riyadh?</h2>
                             <p className="text-gray-300 font-sans text-lg mb-8">Call or WhatsApp us today.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a

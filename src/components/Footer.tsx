@@ -18,7 +18,7 @@ export default function Footer() {
                             />
                         </div>
                         <p className="text-gray-400 font-sans text-sm leading-relaxed mb-6">
-                            Professional electronics, networking, security, and technical services for homes and businesses.
+                            Professional electronics, networking, security, and tech solutions for homes and businesses.
                         </p>
                     </div>
 

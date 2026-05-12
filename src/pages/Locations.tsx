@@ -9,7 +9,7 @@ export default function Locations() {
         <div className="flex flex-col min-h-screen bg-background pt-12 pb-24">
             <SEO
                 title="Service Locations | Perfect Energy Solution Riyadh, Dubai, Kochi"
-                description="Perfect Energy Solution operates from Riyadh (headquarters), Dubai (UAE affiliate), and Kochi (regional support). Professional technical services across Riyadh and the Gulf region."
+                description="Perfect Energy Solution operates from Riyadh (headquarters), Dubai (UAE affiliate), and Kochi (regional support). Professional tech solutions across Riyadh and the Gulf region."
                 canonicalUrl="/locations"
                 jsonLdSchema={{
                     "@context": "https://schema.org",
@@ -38,7 +38,7 @@ export default function Locations() {
                         Our Offices in <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">Riyadh, Dubai & Kochi</span>
                     </h1>
                     <p className="text-lg text-textDark/70 font-sans max-w-2xl mx-auto leading-relaxed mb-0">
-                        Perfect Energy Solution provides professional technical services across Riyadh, UAE, and India from our three strategic office locations.
+                        Perfect Energy Solution provides professional tech solutions across Riyadh, UAE, and India from our three strategic office locations.
                     </p>
                 </div>
 
@@ -60,7 +60,7 @@ export default function Locations() {
                                     </div>
                                 </div>
                                 <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-6">
-                                    Our headquarters and primary service region. We provide comprehensive technical services including electronics repair, networking, CCTV installation, and electrical services across the Kingdom.
+                                    Our headquarters and primary service region. We provide comprehensive tech solutions including electronics repair, networking, CCTV installation, and electrical services across the Kingdom.
                                 </p>
                                 <div className="pt-6 border-t border-white/20 pointer-events-auto relative z-20 flex flex-col gap-6">
                                     <div>
@@ -179,7 +179,7 @@ export default function Locations() {
                                     </div>
                                 </div>
                                 <p className="text-gray-300 font-sans text-lg md:text-xl leading-relaxed mb-6">
-                                    Perfect & Clean Edge Solutions — extending our technical services and deep industry expertise entirely across the Gulf region.
+                                    Perfect & Clean Edge Solutions — extending our tech solutions and deep industry expertise entirely across the Gulf region.
                                 </p>
                                 <div className="pt-8 border-t border-white/20 pointer-events-auto relative z-20 flex flex-wrap items-center gap-4">
                                     <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-semibold px-8 py-4 rounded-xl transition-all transform hover:-translate-y-1">
