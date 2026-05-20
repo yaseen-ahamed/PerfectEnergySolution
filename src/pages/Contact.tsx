@@ -17,9 +17,29 @@ export default function Contact() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setSubmitted(true);
+        try {
+            await fetch("https://formsubmit.co/ajax/info@perfectenergysolution.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    phone: formData.phone,
+                    email: formData.email,
+                    service: formData.service,
+                    message: formData.message,
+                    _subject: "New Contact Form Submission from Perfect Energy Solution"
+                })
+            });
+            setSubmitted(true);
+        } catch (error) {
+            console.error(error);
+            setSubmitted(true);
+        }
     };
 
     const contactInfo = [
@@ -40,8 +60,8 @@ export default function Contact() {
         {
             icon: Mail,
             label: "Email",
-            value: "Ksa.pes@gmail.com",
-            href: "mailto:Ksa.pes@gmail.com",
+            value: "info@perfectenergysolution.com",
+            href: "mailto:info@perfectenergysolution.com",
             color: "bg-secondary/10 text-secondary"
         },
         {

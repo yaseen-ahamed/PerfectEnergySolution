@@ -20,7 +20,7 @@ export default function TopBar() {
                     </div>
                     <div className="flex items-center gap-2.5">
                         <Mail className="w-4 h-4 text-accent" />
-                        <a href="mailto:info@perfectenergysolutions.com" className="font-sans font-medium hover:text-accent transition-colors">info@perfectenergysolutions.com</a>
+                        <a href="mailto:info@perfectenergysolution.com" className="font-sans font-medium hover:text-accent transition-colors">info@perfectenergysolution.com</a>
                     </div>
                 </div>
                 <div className="flex items-center gap-5">
