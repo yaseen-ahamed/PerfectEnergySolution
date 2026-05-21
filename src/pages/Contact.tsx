@@ -17,6 +17,30 @@ export default function Contact() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/info@perfectenergysolution.com", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Submission error:", error);
+            alert("Network error. Please try again later.");
+        }
+    };
+
     const contactInfo = [
         {
             icon: PhoneCall,
@@ -108,7 +132,7 @@ export default function Contact() {
                                 <p className="text-gray-600 font-sans">Thank you for reaching out. We'll get back to you shortly.</p>
                             </div>
                         ) : (
-                            <form action="https://formsubmit.co/info@perfectenergysolution.com" method="POST" className="space-y-5">
+                            <form onSubmit={handleSubmit} className="space-y-5">
                                 <input type="hidden" name="_subject" value="New Contact Form Submission from Perfect Energy Solution" />
                                 <input type="hidden" name="_captcha" value="false" />
                                 <div>
